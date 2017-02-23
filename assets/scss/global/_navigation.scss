@@ -1,0 +1,90 @@
+/*--------------------------------------NAV-----------------------------------------*/
+
+.main-nav > ul {
+  float: right;
+  margin-top: 6px;
+  margin-right: 68px;
+  > li {
+    position: relative;
+    display: inline-block;
+    margin:  0 12px;
+    text-align: center;
+    cursor: pointer;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+     a {
+      position: relative;
+      display: inline-block;
+      font-size: 10px;
+       letter-spacing: 2px;
+      text-transform: uppercase;
+      color: $color-9;
+      &:after {
+        position: absolute;
+        content: '';
+        width: 102%;
+        height: 2px;
+        left: -1%;
+        bottom: -5px;
+        background-color: transparent;
+        @include transition($transition-link);
+      }
+    }
+  }
+}
+.main-nav  a:hover,
+.main-nav .current-menu-item > a {
+  text-decoration: none;
+}
+.main-nav  a:hover:after,
+.main-nav .current-menu-item > a:after {
+  background-color: $color-2;
+}
+.mobile-menu {
+  padding-bottom: 70px;
+  > li {
+    position: relative;
+    > a {
+      position: relative;
+      display: block;
+     font-size: 16px;
+      padding: 15px 35px 13px;
+      color: #40464b;
+    }
+    a:hover,
+    &.current-menu-item > a {
+      color: #fb7e22;
+      text-decoration: none;
+    }
+  }
+  > .current-menu-item > a,
+  > li > a:hover {
+    text-decoration: none;
+  }
+  .expanded:after {
+    content: "\f107";
+    font-family: FontAwesome;
+    font-size: 16px;
+    line-height: 1;
+    text-indent: 0;
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: 50%;
+    margin-top: -8px;
+    right: 10px;
+    display: inline-block;
+    color: #770700;
+  }
+  &:hover:after {
+    color: #0097de;
+  }
+  &.open:after {
+    content: "\f106";
+  }
+}
+.header-btn-box {
+  float: right;
+}
