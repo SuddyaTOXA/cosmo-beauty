@@ -29,3 +29,12 @@
 @mixin border-radius($radius: 5px) {
   @include css3-prefix('border-radius', $radius);
 }
+
+// BACKGROUND IMAGE
+@mixin bg($bg_position: center, $bg_size: cover, $bg_repeat: no-repeat) {
+  background: {
+    position: $bg_position;
+    size: $bg_size;
+    repeat: $bg_repeat;
+  }
+}
