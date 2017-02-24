@@ -23,3 +23,16 @@ a.btn-big, .btn-big {
   padding: 13px 30px 13px;
   border-width: 2px;
 }
+a.btn-banner, .btn-banner {
+  padding: 13px 30px 13px;
+  font-size: 0.8em;
+  color: $color-0;
+  letter-spacing: 4px;
+  border-width: 2px;
+  border-color: $color-0;
+  background-color: transparent;
+  &:hover {
+    color: $color-2;
+    background-color: $color-0;
+  }
+}

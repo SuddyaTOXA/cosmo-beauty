@@ -1,4 +1,11 @@
-$(function(){
+jQuery(document).ready(function( $ ) {
+
+    // for burger menu
+    $('.mobile-menu-toggle, .mobile-menu-overlay').on('click', function(){
+        $('.mobile-menu-toggle').toggleClass('active');
+        $('.mobile-menu-wrap').toggleClass('showing');
+        $(document.body).toggleClass('overflow');
+    });
 
     // for smooth scroll
 	if ( $('a').is('.smooth-scroll') ) {
@@ -10,15 +17,10 @@ $(function(){
         });
     }
 
-	$(document).ready(function() {
-        // for burger menu
-        $('.mobile-menu-toggle, .mobile-menu-overlay').on('click', function(){
-            $('.mobile-menu-toggle').toggleClass('active');
-            $('.mobile-menu-wrap').toggleClass('showing');
-            $(document.body).toggleClass('overflow');
-        });
-
-
-	});
+    //for banner slider
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true
+    });
 
 });

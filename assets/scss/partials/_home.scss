@@ -1,68 +1,47 @@
-.content {
-  .inversion & {
-    color: $color-0;
-  }
-  * {
-    margin-bottom: 12px;
-    line-height: 1.7;
-    &:last-child {
-      margin-bottom: 0;
-    }
-  }
-  a {
-    color: $color-1;
-    &:hover {
-      text-decoration: underline;
-    }
-  }
-  ul > li {
-    list-style-type: disc;
-  }
-  ol > li {
-    list-style-type: decimal;
-  }
-  li {
-    margin-bottom: 12px;
-  }
-  li, blockquote {
-    text-align: left;
-  }
-  blockquote {
-    max-width: 640px;
-    margin: 20px auto 0;
-    padding-top: 60px;
-    text-align: center;
-    background-image: url('../../img/qute.png');
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-size: 32px 26px;
-  }
-  img {
-    max-width: 100%;
-    height: auto;
-    &.alignleft {
-      float: left;
-      margin: 4px 12px 12px 0;
-    }
-    &.alignright {
-      float: right;
-      margin: 4px 0 12px 12px;
-    }
-    &.aligncenter{
-      display: block;
-      margin: 0 auto 12px;
-      clear: both;
-    }
-  }
-}
-
 .section {
   padding-top: 112px;
   padding-bottom: 112px;
 }
 
-.section-banner {}
-
+.section-banner {
+}
+  .swiper-container {
+    width: 100%;
+    height: 100%;
+  }
+    .swiper-slide {
+      @include bg();
+      .btn-banner {
+        margin-top: 60px;
+      }
+      .container-box {
+        padding-left: 120px;
+      }
+    }
+        .banner-title {
+          max-width: 700px;
+          font-size: 2em;
+          color: $color-0;
+          text-transform: uppercase;
+          letter-spacing: 13px;
+        }
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background-color: transparent;
+  border: 1px solid #fff;
+  opacity: 1;
+  @include transition($transition-other);
+  &:hover {
+    background-color: #fff;
+    opacity: 0.3;
+  }
+}
+.swiper-pagination-bullet-active,
+.swiper-pagination-bullet-active:hover {
+  background-color: #fff;
+  opacity: 1;
+}
 .section-welcome {
   .content {
     max-width: 840px;
@@ -75,24 +54,25 @@
     line-height: 1.45;
     letter-spacing: 6px;
     text-transform: uppercase;
-    .inversion & {
+    .vertical-align & {
       color: $color-0;
     }
   }
 
 .section-cosmo-is {
-  padding-top: 232px;
-  padding-bottom: 232px;
   text-align: center;
   @include bg();
+  .container {
+    min-height: 635px;
+  }
   .content {
-    max-width: 930px;
+    max-width: 910px;
     margin: 0 auto;
   }
 }
+
 .section-testimonial {
   text-align: center;
-  background-color: $color-4;
   .section-title {
     margin-bottom: 50px;
   }
@@ -104,11 +84,13 @@
   .btn-big {
     margin-top: 76px;
   }
+  .content {
+    max-width: 900px;
+  }
 }
 
 .section-more-info {
   text-align: center;
-  background-color: $color-3;
   .content {
     max-width: 860px;
     margin: 0 auto;
