@@ -419,7 +419,7 @@ a.btn-big, .btn-big {
 .content a {
   color: #ff7f86; }
   .content a:hover {
-    text-decoration: u; }
+    text-decoration: underline; }
 .content ul > li {
   list-style-type: disc; }
 .content ol > li {
