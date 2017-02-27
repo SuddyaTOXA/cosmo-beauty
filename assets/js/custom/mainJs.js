@@ -23,4 +23,18 @@ jQuery(document).ready(function( $ ) {
         paginationClickable: true
     });
 
+    $(window).on('load resize', function() {
+        var socialFooter = $('.footer-social'),
+            leftBox = $('.footer-coll-list .left'),
+            rightBox = $('.footer-coll-list .right');
+
+        if ($(window).width() <= '1024') {
+            console.log('Move right');
+            socialFooter.appendTo(rightBox);
+        } else {
+            console.log('Move left');
+            socialFooter.appendTo(leftBox);
+        }
+    });
+
 });

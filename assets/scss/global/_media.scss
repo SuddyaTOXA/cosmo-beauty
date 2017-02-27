@@ -15,7 +15,12 @@
 }
 
 @media all and (max-width: 1199px) {
-
+  .main-nav > ul {
+    margin-right: 20px;
+    > li {
+      margin: 0 6px;
+    }
+  }
 }
 
 @media all and (max-width: 1080px) {
@@ -23,7 +28,135 @@
 }
 
 @media all and (max-width: 1024px) {
-
+  .wrapper {
+    padding-top: 75px;
+  }
+  .header-btn-box {
+    display: none;
+  }
+  .desktop {
+    display: none !important;
+  }
+  .mobile-menu-wrap,
+  .mobile-category-toggle,
+  .mobile-menu-toggle {
+    display: block;
+  }
+  .mobile-menu-wrap {
+    .header-btn-box {
+      display: block;
+      margin: 0 25px 35px;
+      float: none;
+    }
+  }
+  .header{
+    height: 75px;
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
+  .logo {
+    max-width: 95px;
+  }
+  .custom-menu-box {
+    display: none;
+  }
+  .banner-title {
+    font: $m-font-h1;
+  }
+  .section-title {
+    margin-bottom: 20px;
+    font: $m-font-h2;
+  }
+  .form-box-title {
+    font: $m-font-h3;
+  }
+  .content {
+    font: $m-font-lrg-body;
+    .footer-block &,
+    .form-block &,
+    .sm-body-text & {
+      font: $m-font-sm-body;
+    }
+  }
+  .input-style,
+  textarea.input-style {
+    font: $m-font-sm-body;
+  }
+  .section {
+    padding-top: 42px;
+    padding-bottom: 42px;
+  }
+  .swiper-container {
+    .container-box {
+      padding: 0 25px;
+    }
+  }
+  .section-cosmo-is {
+    .section-title {
+      margin-bottom: 27px;
+    }
+    .container {
+      min-height: 550px;
+    }
+  }
+  .section-testimonial {
+    padding-top: 122px;
+    padding-bottom: 92px;
+  }
+  .section-cosmo-courses {
+    padding-bottom: 85px;
+    .btn-big {
+      margin-top: 37px;
+    }
+  }
+  .section-more-info {
+    padding-top: 107px;
+    padding-bottom: 156px;
+  }
+  .section-connect {
+    padding-top: 74px;
+    padding-bottom: 95px;
+    .content {
+      margin-bottom: 30px;
+    }
+  }
+  .footer {
+    padding: 50px 0 45px;
+  }
+  .coll-2,
+  .coll-4,
+  .coll-8 {
+    width: 100%;
+    margin: 0;
+  }
+  .right {
+    .footer-social {
+      padding-top: 22px;
+      margin-bottom: 24px;
+    }
+  }
+  .copyright {
+    margin-bottom: 22px;
+    a {
+      display: block;
+      margin-top: 5px;
+    }
+  }
+  .filed-name {
+    position: initial;
+    margin-bottom: 14px;
+    color: $color-7;
+    .name-list & {
+      margin-bottom: 0;
+    }
+  }
+  .name-list {
+    > li {
+      &:first-child {
+        margin-top: 7px;
+      }
+    }
+  }
 }
 
 @media all and (max-width: 991px) {
@@ -61,7 +194,11 @@
 }
 
 @media all and (max-width: 640px) {
+  .date-list {
+    > li {
 
+    }
+  }
 }
 
 @media all and (max-width: 600px) {
@@ -69,7 +206,13 @@
 }
 
 @media all and (max-width: 560px) {
-
+  .check-list {
+    &.interested {
+      > li {
+        width: 100%;
+      }
+    }
+  }
 }
 
 @media all and (max-width: 480px) {

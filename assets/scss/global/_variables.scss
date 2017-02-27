@@ -1,6 +1,26 @@
 /*fonts*/
 $font-main: 'Lato', Arial, sans-serif;
 
+$font-h1: #{40px/52px} $font-main;
+$font-h2: #{30px/44px} $font-main;
+$font-h3: #{22px/32px} $font-main;
+$font-h4: #{16px/24px} $font-main;
+$font-lrg-body: #{20px/34px} $font-main;
+$font-sm-body: #{16px/30px} $font-main;
+$font-primary-nav: #{10px/12px} $font-main;
+
+$m-font-h1: #{32px/42px} $font-main;
+$m-font-h2: #{24px/34px} $font-main;
+$m-font-h3: #{22px/32px} $font-main;
+$m-font-h4: #{16px/24px} $font-main;
+$m-font-lrg-body: #{16px/30px} $font-main;
+$m-font-sm-body: #{14px/26px} $font-main;
+$m-font-primary-nav: #{10px/12px} $font-main;
+
+$letter-spacing-250: 0.25em;
+$letter-spacing-200: 0.2em;
+$letter-spacing-20: 0.02em;
+
 /*colors*/
 $color-0: #ffffff;
 $color-1: #ff7f86;

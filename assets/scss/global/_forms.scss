@@ -1,0 +1,126 @@
+.input-style {
+  display: block;
+  width: 100%;
+  margin: 0;
+  border: 1px solid $color-7;
+  box-shadow: none;
+  font: $font-sm-body;
+  letter-spacing: $letter-spacing-20;
+  color: $color-7;
+  padding: 5px 15px;
+  background-color: transparent;
+  @include transition($transition-other);
+  &:hover,
+  &:active,
+  &:focus {
+    border-color: $color-8;
+  }
+}
+input.input-style,
+input.TextField {
+  height: 32px;
+  line-height: 32px;
+}
+textarea.input-style {
+  font: $font-sm-body;
+  letter-spacing: $letter-spacing-20;
+  padding: 5px 15px;
+  width: 100%;
+  min-height: 200px;
+  resize: none;
+  border: 1px solid $color-7;
+  color: $color-7;
+}
+input::-webkit-input-placeholder {
+  color: $color-9;
+  @include transition($transition-other);
+}
+input::-moz-placeholder {
+  color: $color-9;
+  @include transition($transition-other);
+}
+input:-ms-input-placeholder {
+  color: $color-9;
+  @include transition($transition-other);
+}
+input:-moz-placeholder {
+  color: $color-9;
+  @include transition($transition-other);
+}
+textarea::-webkit-input-placeholder {
+  font-family: $font-main;
+  color: $color-9;
+  @include transition($transition-other);
+}
+textarea::-moz-placeholder {
+  font-family: $font-main;
+  color: $color-9;
+  @include transition($transition-other);
+}
+textarea:-ms-input-placeholder {
+  font-family: $font-main;
+  color: $color-9;
+  @include transition($transition-other);
+}
+textarea:-moz-placeholder {
+  font-family: $font-main;
+  color: $color-9;
+  @include transition($transition-other);
+}
+.check-style input[type=checkbox],
+.radio-style input[type=radio] {
+  display: none;
+}
+.check-style span,
+.radio-style span {
+  position: relative;
+  display: inline-block;
+  padding-left: 32px;
+  line-height: 1.3;
+}
+.check-style span:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  margin-top: -9px;
+  left: 0;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 1px solid $color-7;
+  cursor: pointer;
+  color: $color-7;
+  font: normal normal normal 15px/16px FontAwesome;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  text-align: center;
+  background: #ffffff;
+}
+.check-style input[type=checkbox]:checked + span:before {
+  content: '\f00c';
+}
+.radio-style span:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  margin-top: -9px;
+  left: 0;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #CCCFD1;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  cursor: pointer;
+  color: $color-7;
+  font: normal normal normal 14px/16px FontAwesome;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  text-align: center;
+  background: #ffffff;
+  letter-spacing: 1px;
+}
+.radio-style input[type=radio]:checked + span:before {
+  content: '\f111';
+}

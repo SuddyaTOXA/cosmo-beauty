@@ -9,6 +9,9 @@
     > li {
       float: left;
       padding: 0 5px;
+      &:last-child {
+        clear: right;
+      }
     }
   }
     .footer-menu {
@@ -17,8 +20,8 @@
       > li {
         > a {
           display: block;
-          padding: 8px 0;
-          font-size: 0.8em;
+          padding: 7px 0;
+          font: $font-h4;
           letter-spacing: 2px;
           text-transform: uppercase;
           color: $color-0;
@@ -37,8 +40,7 @@
     .footer-block-title {
       margin-bottom: 14px;
       padding-top: 4px;
-      font-size: 0.8em;
-      line-height: 1.5;
+      font: $font-h4;
       color: $color-0;
       text-transform: uppercase;
     }

@@ -3,9 +3,9 @@ a.btn, .btn {
   display: inline-block;
   max-width: 100%;
   margin: 0;
-  padding: 11px 16px 9px;
+  padding: 12px 16px 9px;
   font-size: 10px;
-  letter-spacing: 2px;
+  letter-spacing: $letter-spacing-200;
   color: $color-2;
   text-align: center;
   cursor: pointer;
@@ -19,20 +19,26 @@ a.btn, .btn {
   }
 }
 a.btn-big, .btn-big {
-  font-size: 0.8em;
+  min-width: 155px;
+  font-size: 16px;
   padding: 13px 30px 13px;
   border-width: 2px;
 }
-a.btn-banner, .btn-banner {
-  padding: 13px 30px 13px;
-  font-size: 0.8em;
+a.btn-magenta, .btn-magenta {
   color: $color-0;
-  letter-spacing: 4px;
-  border-width: 2px;
   border-color: $color-0;
   background-color: transparent;
   &:hover {
     color: $color-2;
     background-color: $color-0;
+  }
+}
+a.btn-blue, .btn-blue {
+  color: $color-5;
+  border-color: $color-5;
+  background-color: transparent;
+  &:hover {
+    color: $color-0;
+    background-color: $color-5;
   }
 }
