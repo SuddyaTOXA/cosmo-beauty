@@ -31,31 +31,31 @@
                 </div>
 
                 <div class="header-btn-box">
-                    <a href="#" class="btn">Apply to cosmo today</a>
+                    <a href="#" class="btn btn-header">Apply to cosmo today</a>
                 </div>
 
                 <nav class="main-nav desktop">
                     <ul>
-                        <li class="current-menu-item"><a href="#">Home</a></li>
-                        <li><a href="#">Courses</a></li>
-                        <li><a href="#">Why cosmetology</a></li>
-                        <li><a href="#">Admissions</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Blog</a></li>
+                        <li class="current-menu-item"><a href="index.html">Home</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="why-cosmetology.html">Why cosmetology</a></li>
+                        <li><a href="admissions.html">Admissions</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="blog.html">Blog</a></li>
                     </ul>
                 </nav>
 
                 <div class="mobile-menu-wrap">
                     <div class="mobile-menu-box">
                         <ul class="mobile-menu">
-                            <li class="current-menu-item"><a href="#">Home</a></li>
-                            <li><a href="#">Courses</a></li>
-                            <li><a href="#">Why cosmetology</a></li>
-                            <li><a href="#">Admissions</a></li>
-                            <li><a href="#">Services</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Blog</a></li>
+                            <li class="current-menu-item"><a href="index.html">Home</a></li>
+                            <li><a href="courses.html">Courses</a></li>
+                            <li><a href="why-cosmetology.html">Why cosmetology</a></li>
+                            <li><a href="admissions.html">Admissions</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="blog.html">Blog</a></li>
                         </ul>
                         <div class="header-btn-box">
                             <a href="#" class="btn">Apply to cosmo today</a>
@@ -77,6 +77,11 @@
                     <div class="mobile-menu-overlay"></div>
                 </div>
 
+            </div>
+        </header>
+
+        <section class="section-custom-menu-wrap">
+            <div class="container">
                 <div  class="custom-menu-box">
                     <ul class="social-list">
                         <li><a href="#" class=""><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
@@ -91,7 +96,7 @@
                     </div>
                 </div>
             </div>
-        </header>
+        </section>
 
         <section class="section-banner vertical-align">
             <div class="swiper-container">
@@ -99,7 +104,25 @@
                     <div class="swiper-slide" style="background-image: url('img/banner_slide_1.jpg')">
                         <div class="container">
                             <div class="container-box">
-                                <h1 class="banner-title">Get Your Career started in cosmetology today! </h1>
+                                <h1 class="banner-title">Get Your Career started in cosmetology today!</h1>
+                                <div class="content">
+
+                                </div>
+                                <a href="#" class="btn btn-magenta btn-big">Learn more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" style="background-image: url('img/about_banner.jpg')">
+                        <div class="container">
+                            <div class="container-box">
+                                <h1 class="banner-title">Get Your Career started in cosmetology today!</h1>
+                                <div class="content">
+                                    <p>
+                                        Cosmo Beauty Academy is a comprehensive, high tech institute that offers state-of-the-art
+                                        equipment and experienced staff for future professionals in the field of cosmetology,
+                                        esthetics, and nail technology by providing various programs.
+                                    </p>
+                                </div>
                                 <a href="#" class="btn btn-magenta btn-big">Learn more</a>
                             </div>
                         </div>
@@ -108,14 +131,9 @@
                         <div class="container">
                             <div class="container-box">
                                 <h1 class="banner-title">Get Your Career started in cosmetology today!</h1>
-                                <a href="#" class="btn btn-magenta btn-big">Learn more</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide" style="background-image: url('img/banner_slide_1.jpg')">
-                        <div class="container">
-                            <div class="container-box">
-                                <h1 class="banner-title">Get Your Career started in cosmetology today!</h1>
+                                <div class="content">
+
+                                </div>
                                 <a href="#" class="btn btn-magenta btn-big">Learn more</a>
                             </div>
                         </div>
@@ -220,13 +238,13 @@
                                     </div>
                                     <li>
                                         <label>
-                                            <p class="form-label-name">First</p>
+                                            <span class="form-label-name">First</span>
                                             <input type="text" class="input-style">
                                         </label>
                                     </li>
                                     <li>
                                         <label>
-                                            <p class="form-label-name">Last</p>
+                                            <span class="form-label-name">Last</span>
                                             <input type="text" class="input-style">
                                         </label>
                                     </li>
@@ -248,9 +266,9 @@
                                     <input type="text" class="input-style">
                                 </label>
                             </li>
-                            <li>
+                            <li class="interested">
                                 <p class="form-label-name">What course(s) are you interested in?</p>
-                                <ul class="check-list interested">
+                                <ul class="check-list">
                                     <li>
                                         <label class="check-style">
                                             <input type="checkbox" name="interested" value="cosmetology">
@@ -297,9 +315,9 @@
                             <li>
                                 <p class="form-label-name">Best Time to Contact You?</p>
                                 <ul class="date-list">
-                                    <li><input type="number" min="1" max="31" class="input-style"></li>
-                                    <li><input type="number" min="1" max="12" class="input-style"></li>
-                                    <li><input type="number" min="1970" max="2099" class="input-style"></li>
+                                    <li><input type="text" class="input-style"></li>
+                                    <li><input type="text" class="input-style"></li>
+                                    <li><input type="text" class="input-style"></li>
                                 </ul>
                             </li>
                             <li class="textarea-box">
@@ -310,9 +328,6 @@
                                     <textarea name="text" class="input-style"></textarea>
                                 </label>
                             </li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
                         </ul>
                         <button type="submit" class="btn btn-blue btn-big">Submit</button>
                     </form>
@@ -326,11 +341,11 @@
             <ul class="footer-coll-list">
                 <li class="coll-4 left">
                     <ul class="footer-menu">
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Admissions</a></li>
-                        <li><a href="#">Why cosmetology</a></li>
-                        <li><a href="#">Apply</a></li>
-                        <li><a href="#">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="admissions.html">Admissions</a></li>
+                        <li><a href="why-cosmetology.html">Why cosmetology</a></li>
+                        <li><a href="apply.html">Apply</a></li>
+                        <li><a href="about.html">About</a></li>
                     </ul>
                     <div class="footer-block">
                         <h4 class="footer-block-title">Location</h4>
@@ -408,6 +423,6 @@
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.jquery.min.js"></script>
-	<script src="assets/js/custom/mainJs.js"></script>
+	<script src="assets/js/custom/scripts.js"></script>
 </body>
 </html>

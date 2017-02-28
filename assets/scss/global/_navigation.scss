@@ -1,10 +1,12 @@
 /*--------------------------------------NAV-----------------------------------------*/
-
+.main-nav {
+  overflow: hidden;
+}
 .main-nav > ul {
-  float: right;
   margin-top: 8px;
-  margin-right: 68px;
+  margin-right: 10px;
   margin-left: 10px;
+  text-align: center;
   > li {
     position: relative;
     display: inline-block;
@@ -108,5 +110,7 @@
   }
 }
 .header-btn-box {
+  overflow: hidden;
   float: right;
+  margin-top: 2px;
 }

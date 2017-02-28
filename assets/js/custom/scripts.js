@@ -17,9 +17,21 @@ jQuery(document).ready(function( $ ) {
         });
     }
 
+    // for select language
+    $('.language-box-title').click(function() {
+        var menuShow = $(this).find('.drop-down-list'),
+            menuBtn = $(this).find('.drop-down-btn');
+
+        menuBtn.toggleClass('active');
+        menuShow.slideToggle(500);
+
+    });
+
     //for banner slider
     var swiper = new Swiper('.swiper-container', {
         pagination: '.swiper-pagination',
+        autoHeight: true,
+        effect: 'fade',
         paginationClickable: true
     });
 
@@ -38,3 +50,4 @@ jQuery(document).ready(function( $ ) {
     });
 
 });
+

@@ -1,0 +1,30 @@
+.section-page-banner {
+  @include bg();
+  &.vertical-align .container-box {
+    vertical-align: bottom;
+  }
+  .container {
+    padding-bottom: 80px;
+  }
+  .banner-title,
+  .content {
+    max-width: 640px;
+    margin-top: 14px;
+    margin-bottom: 1px;
+  }
+}
+
+.section-why-we {
+  .content {
+    padding-bottom: 115px;
+    margin-bottom: 108px;
+    font: $font-sm-body;
+    border-bottom: 1px solid $color-7;
+    &:last-child {
+      margin-bottom: 0;
+      padding-bottom: 0;
+      border-bottom: none;
+    }
+  }
+
+}

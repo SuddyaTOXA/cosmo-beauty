@@ -6,8 +6,8 @@
   box-shadow: none;
   font: $font-sm-body;
   letter-spacing: $letter-spacing-20;
-  color: $color-7;
-  padding: 5px 15px;
+  color: $color-8;
+  padding: 5px 12px;
   background-color: transparent;
   @include transition($transition-other);
   &:hover,
@@ -23,13 +23,14 @@ input.TextField {
 }
 textarea.input-style {
   font: $font-sm-body;
+  line-height: 26px;
   letter-spacing: $letter-spacing-20;
-  padding: 5px 15px;
+  padding: 5px 12px;
   width: 100%;
   min-height: 200px;
   resize: none;
   border: 1px solid $color-7;
-  color: $color-7;
+  color: $color-8;
 }
 input::-webkit-input-placeholder {
   color: $color-9;
@@ -89,7 +90,7 @@ textarea:-moz-placeholder {
   height: 16px;
   border: 1px solid $color-7;
   cursor: pointer;
-  color: $color-7;
+  color: $color-8;
   font: normal normal normal 15px/16px FontAwesome;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
@@ -97,7 +98,10 @@ textarea:-moz-placeholder {
   background: #ffffff;
 }
 .check-style input[type=checkbox]:checked + span:before {
-  content: '\f00c';
+  font-family: $font-main;
+  content: "\2715 ";
+  font-size: 22px;
+  line-height: 16px;
 }
 .radio-style span:before {
   content: '';
@@ -113,7 +117,7 @@ textarea:-moz-placeholder {
   -moz-border-radius: 50%;
   border-radius: 50%;
   cursor: pointer;
-  color: $color-7;
+  color: $color-8;
   font: normal normal normal 14px/16px FontAwesome;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;

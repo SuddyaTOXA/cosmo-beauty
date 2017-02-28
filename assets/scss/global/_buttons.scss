@@ -18,6 +18,10 @@ a.btn, .btn {
     background-color: $color-2;
   }
 }
+a.btn-header, .btn-header {
+  max-width: 195px;
+  width: 100%;
+}
 a.btn-big, .btn-big {
   min-width: 155px;
   font-size: 16px;

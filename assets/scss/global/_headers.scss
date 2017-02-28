@@ -4,8 +4,9 @@
   top: 0;
   left: 0;
   width: 100%;
-  padding-top: 35px;
-  padding-bottom: 22px;
+  height: 100px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   background-color: $bg-header;
   -webkit-box-shadow: 0 1px 15px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0 1px 15px rgba(0, 0, 0, 0.1);
@@ -29,8 +30,9 @@
   }
 }
     .logo {
+      overflow: hidden;
       float: left;
-      max-width: 135px;
+      max-width: 133px;
       @include transition($transition-other);
       img {
         max-width: 100%;
@@ -159,123 +161,3 @@
         bottom: 0;
       }
     }
-.custom-menu-box {
-  display: inline-block;
-  position: absolute;
-  z-index: 9;
-  right: 25px;
-  top: 90px;
-}
-.custom-mob-menu-box {
-  padding: 0 25px;
-}
-.language-box {
-  margin-top: 3px;
-  display: inline-block;
-  .custom-mob-menu-box & {
-    display: inline-block;
-    margin-bottom: 40px;
-
-  }
-  &:hover .language-list {
-    display: block;
-  }
-  &:hover .language-box-title:after {
-    background-color: rgba(255, 255, 255, 0.7);
-    .custom-mob-menu-box & {
-      background-color: rgba(34, 36, 38, 0.7);
-    }
-  }
-
-}
-  .language-box-title {
-    position: relative;
-    padding-bottom: 5px;
-    font: 12px $font-main;
-    color: $color-0;
-    letter-spacing: $letter-spacing-200;
-    text-transform: uppercase;
-    cursor: default;
-    .custom-mob-menu-box & {
-      color: $color-9;
-    }
-    &:after {
-      position: absolute;
-      content: '';
-      width: 100%;
-      height: 2px;
-      bottom: 0;
-      left: 0;
-      background-color: rgba(255, 255, 255, 0);
-      @include transition($transition-other);
-      .custom-mob-menu-box & {
-        background-color: rgba(34, 36, 38, 0);
-      }
-    }
-  }
-  .language-list {
-    display: none;
-    margin-top: 7px;
-    @include transition($transition-other);
-    > li {
-      > a {
-        font: 10px $font-main;
-        color: $color-0;
-        letter-spacing: $letter-spacing-200;
-        text-transform: uppercase;
-        &:hover {
-          opacity: 0.7;
-          text-decoration: none;
-        }
-        .custom-mob-menu-box & {
-          color: $color-9;
-        }
-      }
-    }
-  }
-.social-list {
-  float: right;
-  display: inline-block;
-  margin-bottom: 46px;
-  margin-left: 40px;
-  .custom-mob-menu-box & {
-    float: none;
-    display: block;
-    margin-left: 0;
-  }
-  > li {
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    margin-left: 16px;
-    text-align: center;
-    @include border-radius(50%);
-    border: 1px solid #fff;
-    background-color: transparent;
-    cursor: pointer;
-    .custom-mob-menu-box & {
-      border-color: $color-9;
-    }
-    &:hover {
-      opacity: 0.7;
-      i {
-        opacity: 0.7;
-      }
-    }
-    &:first-child {
-      margin-left: 0;
-    }
-  }
-  i {
-    font-size: 16px;
-    line-height: 30px;
-    color: #fff;
-    @include transition($transition-link);
-    .custom-mob-menu-box & {
-      color:  $color-9;
-    }
-    .fa-facebook {
-      font-size: 14px;
-    }
-  }
-}
