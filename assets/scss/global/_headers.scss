@@ -4,9 +4,9 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 100px;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  min-height: 100px;
+  padding-top: 29px;
+  padding-bottom: 29px;
   background-color: $bg-header;
   -webkit-box-shadow: 0 1px 15px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0 1px 15px rgba(0, 0, 0, 0.1);
@@ -110,7 +110,7 @@
     .mobile-menu-toggle {
       position: absolute;
       right: 0;
-      top: -20px;
+      top: -21px;
       height: 75px;
       width: 75px;
       vertical-align: middle;

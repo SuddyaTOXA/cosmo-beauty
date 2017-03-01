@@ -49,12 +49,13 @@
     }
   }
   .header{
-    height: 75px;
+    min-height: 75px;
     padding-top: 21px;
     padding-bottom: 21px;
   }
   .logo {
     max-width: 95px;
+    margin-top: 3px;
   }
   .custom-menu-box {
     display: none;
