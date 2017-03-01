@@ -41,10 +41,8 @@ jQuery(document).ready(function( $ ) {
             rightBox = $('.footer-coll-list .right');
 
         if ($(window).width() <= '1024') {
-            console.log('Move right');
             socialFooter.appendTo(rightBox);
         } else {
-            console.log('Move left');
             socialFooter.appendTo(leftBox);
         }
     });

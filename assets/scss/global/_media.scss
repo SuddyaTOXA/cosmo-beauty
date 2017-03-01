@@ -124,6 +124,8 @@
   }
   .coll-2,
   .coll-4,
+  .coll-3,
+  .coll-6,
   .coll-8 {
     width: 100%;
     margin: 0;
@@ -156,6 +158,44 @@
       }
     }
   }
+  .section-page-banner {
+    .container {
+      padding-bottom: 34px;
+    }
+  }
+  .section-why-we {
+    padding-bottom: 70px;
+    .content {
+      padding-bottom: 70px;
+      margin-bottom: 70px;
+    }
+  }
+  .section-accreditations {
+    padding-top: 92px;
+    padding-bottom: 114px;
+  }
+  .section-program-disclosure {
+    padding-top: 76px;
+    padding-bottom: 10px;
+    .container {
+      > .content {
+        margin-bottom: 34px;
+      }
+    }
+  }
+  .disclosure-right {
+    padding-left: 0;
+  }
+  .disclosure {
+    .content {
+      margin-bottom: 12px;
+      font: $m-font-sm-body;
+    }
+    .box-title {
+      margin-bottom: 5px;
+    }
+  }
+
 }
 
 @media all and (max-width: 991px) {

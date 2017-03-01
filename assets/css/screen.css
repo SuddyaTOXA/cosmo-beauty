@@ -226,8 +226,14 @@ img {
 .coll-8 {
   width: 66.66667%; }
 
+.coll-6 {
+  width: 50%; }
+
 .coll-4 {
   width: 33.33333%; }
+
+.coll-3 {
+  width: 25%; }
 
 .coll-2 {
   width: 16.66667%;
@@ -1144,6 +1150,60 @@ textarea:-moz-placeholder {
     padding-bottom: 0;
     border-bottom: none; }
 
+.section-accreditations {
+  text-align: center; }
+  .section-accreditations .content {
+    max-width: 910px;
+    margin: 0 auto; }
+
+.section-program-disclosure {
+  padding-bottom: 100px; }
+  .section-program-disclosure .container > .content {
+    margin-bottom: 60px; }
+
+.program-disclosure-list {
+  overflow: hidden; }
+  .program-disclosure-list > li {
+    float: left; }
+
+.disclosure-left {
+  margin-right: 8.33333%; }
+
+.disclosure-right {
+  padding-left: 24px; }
+
+.box-title {
+  margin-bottom: 20px;
+  font: 22px/32px "Lato", Arial, sans-serif;
+  letter-spacing: 0.2em;
+  text-transform: uppercase; }
+
+a.link-details {
+  display: inline-block;
+  color: #cf3477;
+  vertical-align: middle; }
+  a.link-details:hover {
+    opacity: 0.7;
+    text-decoration: none; }
+  a.link-details i {
+    margin-top: -2px;
+    margin-left: 3px;
+    font-size: 24px;
+    vertical-align: middle; }
+
+.disclosure {
+  margin-bottom: 62px; }
+  .disclosure .box-title {
+    color: #222426; }
+  .disclosure .content {
+    margin-bottom: 32px;
+    font: 16px/30px "Lato", Arial, sans-serif; }
+  .disclosure a.link-details {
+    margin-top: 1px; }
+
+.magento-style .box-title {
+  color: #cf3477; }
+
 /*import media styles */
 /*--------------------------------------MEDIA-----------------------------------------*/
 @media all and (max-width: 1199px) {
@@ -1235,6 +1295,8 @@ textarea:-moz-placeholder {
 
   .coll-2,
   .coll-4,
+  .coll-3,
+  .coll-6,
   .coll-8 {
     width: 100%;
     margin: 0; }
@@ -1257,7 +1319,35 @@ textarea:-moz-placeholder {
       margin-bottom: 0; }
 
   .name-list > li:first-child {
-    margin-top: 7px; } }
+    margin-top: 7px; }
+
+  .section-page-banner .container {
+    padding-bottom: 34px; }
+
+  .section-why-we {
+    padding-bottom: 70px; }
+    .section-why-we .content {
+      padding-bottom: 70px;
+      margin-bottom: 70px; }
+
+  .section-accreditations {
+    padding-top: 92px;
+    padding-bottom: 114px; }
+
+  .section-program-disclosure {
+    padding-top: 76px;
+    padding-bottom: 10px; }
+    .section-program-disclosure .container > .content {
+      margin-bottom: 34px; }
+
+  .disclosure-right {
+    padding-left: 0; }
+
+  .disclosure .content {
+    margin-bottom: 12px;
+    font: 14px/26px "Lato", Arial, sans-serif; }
+  .disclosure .box-title {
+    margin-bottom: 5px; } }
 @media all and (max-width: 782px) {
   .admin-bar .header {
     top: 46px; } }
