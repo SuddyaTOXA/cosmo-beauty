@@ -12,7 +12,7 @@ a.btn, .btn {
   text-transform: uppercase;
   text-decoration: none;
   border: 1px solid $color-2;
-  background-color: $color-0;
+  background-color: transparent;
   &:hover {
     color: $color-0;
     background-color: $color-2;

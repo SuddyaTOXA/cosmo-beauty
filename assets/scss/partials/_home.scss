@@ -18,70 +18,81 @@
 .custom-mob-menu-box {
   padding: 0 25px;
 }
-.language-box {
-  margin-top: 3px;
-  display: inline-block;
-  .custom-mob-menu-box & {
-    display: inline-block;
-    margin-bottom: 40px;
-
-  }
-  .language-list {
-    display: none;
-  }
-  &:hover .language-box-title:after {
-    background-color: rgba(255, 255, 255, 0.7);
-    .custom-mob-menu-box & {
-      background-color: rgba(34, 36, 38, 0.7);
+    .btn-group {
+      display: inline-block;
+      max-width: 200px;
+      .custom-mob-menu-box & {
+        display: inline-block;
+        margin-bottom: 40px;
+      }
     }
-  }
-
-}
-.language-box-title {
-  position: relative;
-  padding-bottom: 5px;
-  font: 12px $font-main;
-  color: $color-0;
-  letter-spacing: $letter-spacing-200;
-  text-transform: uppercase;
-  cursor: default;
-  .custom-mob-menu-box & {
-    color: $color-9;
-  }
-  &:after {
-    position: absolute;
-    content: '';
-    width: 100%;
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: rgba(255, 255, 255, 0);
-    @include transition($transition-other);
-    .custom-mob-menu-box & {
-      background-color: rgba(34, 36, 38, 0);
-    }
-  }
-}
-.language-list {
-  display: none;
-  margin-top: 7px;
-  @include transition($transition-other);
-  > li {
-    > a {
-      font: 10px $font-main;
+    .drop-down-btn {
+      position: relative;
+      display: inline-block;
+      min-width: 145px;
+      padding: 0;
+      padding-bottom: 5px;
+      text-decoration: none;
+      box-shadow: none;
+      border: none;
+      font: 12px $font-main;
       color: $color-0;
+      text-align: left;
       letter-spacing: $letter-spacing-200;
       text-transform: uppercase;
-      &:hover {
-        opacity: 0.7;
-        text-decoration: none;
-      }
+      cursor: default;
+      background-color: transparent;
+      @include transition($transition-other);
       .custom-mob-menu-box & {
         color: $color-9;
       }
+      .drop-down-label {
+        position: relative;
+        padding-bottom: 5px;
+        &:after {
+          position: absolute;
+          content: '';
+          width: 100%;
+          height: 2px;
+          bottom: 0;
+          left: 0;
+          background-color: rgba(255, 255, 255, 0);
+          @include transition($transition-other);
+          .custom-mob-menu-box & {
+            background-color: rgba(34, 36, 38, 0);
+          }
+        }
+      }
+      &.active {
+        .drop-down-label:after {
+          background-color: rgba(255, 255, 255, 0.7);
+          .custom-mob-menu-box & {
+            background-color: rgba(34, 36, 38, 0.7);
+          }
+        }
+      }
     }
-  }
-}
+    .drop-down-list {
+      max-width: 270px;
+      display: none;
+      > li {
+        a, span {
+          font: 10px $font-main;
+          color: $color-0;
+          letter-spacing: $letter-spacing-200;
+          text-transform: uppercase;
+          cursor: pointer;
+          &:hover {
+            opacity: 0.7;
+            text-decoration: none;
+          }
+          .custom-mob-menu-box & {
+            color: $color-9;
+          }
+        }
+      }
+    }
+
 .social-list {
   float: right;
   display: inline-block;

@@ -49,5 +49,18 @@ jQuery(document).ready(function( $ ) {
         }
     });
 
-});
+    $('.btn-group').click(function() {
+        var menuShow = $(this).find('.drop-down-list'),
+            menuBtn = $(this).find('.drop-down-btn');
 
+        menuBtn.toggleClass('active');
+        menuShow.slideToggle(500);
+    });
+
+    $(document).mouseup(function(e){
+        var o=$('.btn-group'),
+            i=$('.drop-down-list');
+        0===o.has(e.target).length&&i.slideUp(500);
+    });
+
+});
