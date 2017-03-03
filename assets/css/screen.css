@@ -1318,8 +1318,8 @@ a.link-details {
 
   .content {
     font: 16px/30px "Lato", Arial, sans-serif; }
-    .footer-block .content, .form-block .content, .sm-body-text .content {
-      font: 14px/26px "Lato", Arial, sans-serif !important; }
+    .footer-block .content, .form-block .content, .section-why-we.sm-body-text .content {
+      font: 14px/26px "Lato", Arial, sans-serif; }
 
   .input-style,
   textarea.input-style {

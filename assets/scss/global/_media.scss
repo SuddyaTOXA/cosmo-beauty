@@ -83,8 +83,8 @@
     font: $m-font-lrg-body;
     .footer-block &,
     .form-block &,
-    .sm-body-text & {
-      font: $m-font-sm-body !important;
+    .section-why-we.sm-body-text & {
+      font: $m-font-sm-body;
     }
   }
   .input-style,
