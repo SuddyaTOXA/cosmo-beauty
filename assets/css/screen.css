@@ -987,7 +987,8 @@ textarea:-moz-placeholder {
   .swiper-slide .btn-big {
     margin-top: 64px; }
   .swiper-slide .container-box {
-    padding-left: 120px; }
+    padding-left: 10px;
+    padding-right: 10px; }
   .swiper-slide .content {
     margin-top: 14px;
     margin-bottom: 1px; }
@@ -1321,9 +1322,6 @@ a.link-details {
   .section {
     padding-top: 42px;
     padding-bottom: 42px; }
-
-  .swiper-container .container-box {
-    padding-left: 0; }
 
   .section-cosmo-is .section-title {
     margin-bottom: 27px; }
