@@ -48,6 +48,8 @@ jQuery(document).ready(function( $ ) {
         pagination: '.swiper-pagination',
         autoHeight: true,
         effect: 'fade',
+        autoplay: 7000,
+        loop: true,
         paginationClickable: true
     });
 

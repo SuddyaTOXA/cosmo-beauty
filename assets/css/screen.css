@@ -1229,9 +1229,9 @@ a.link-details {
 .section-description {
   max-width: 910px;
   margin-top: 25px;
-  margin-bottom: 50px;
-  font: 20px/34px "Lato", Arial, sans-serif;
-  color: #808691; }
+  margin-bottom: 50px; }
+  .section-description .content {
+    font: 20px/34px "Lato", Arial, sans-serif; }
 
 .section-compensation {
   padding-top: 160px;
@@ -1246,7 +1246,8 @@ a.link-details {
   margin-top: 22px; }
 
 .compensation-table {
-  width: 100%;
+  min-width: 100%;
+  margin: 30px -20px 0;
   border-collapse: separate;
   border-spacing: 20px;
   color: #ffffff; }
@@ -1269,6 +1270,9 @@ a.link-details {
   .main-nav > ul > li {
     margin: 0 6px; } }
 @media all and (max-width: 1024px) {
+  .vertical-align .container {
+    min-height: 440px; }
+
   .wrapper {
     padding-top: 75px; }
 
