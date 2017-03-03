@@ -78,7 +78,7 @@ jQuery(document).ready(function( $ ) {
     });
 
     //for table
-    $(window).on('load', function() {
+    $(window).on('load resize', function() {
         var count = $('.compensation-table th').length-1,
             i = 0;
 
