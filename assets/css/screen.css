@@ -137,14 +137,20 @@ img {
 .vertical-align .container-box {
   display: table-cell;
   width: 100%;
-  min-height: 50px;
+  min-height: 300px;
   vertical-align: middle; }
 
 .dark-blue-style .section-title,
+.dark-blue-style .box-title,
+.dark-blue-style .change,
 .dark-blue-style .content,
 .blue-style .section-title,
+.blue-style .box-title,
+.blue-style .change,
 .blue-style .content,
 .light-blue-style .section-title,
+.light-blue-style .box-title,
+.light-blue-style .change,
 .light-blue-style .content {
   color: #ffffff; }
 
@@ -170,9 +176,15 @@ img {
     .content a:hover {
       opacity: 0.7;
       text-decoration: none; }
+  .content h3 {
+    font: 22px/32px "Lato", Arial, sans-serif;
+    margin-bottom: 20px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase; }
   .content h4 {
     margin-bottom: 20px;
     font: 16px/24px "Lato", Arial, sans-serif;
+    letter-spacing: 0.2em;
     text-transform: uppercase; }
   .content ul, .content ol {
     margin-left: 30px;
@@ -476,9 +488,9 @@ textarea:-moz-placeholder {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100px;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  min-height: 100px;
+  padding-top: 29px;
+  padding-bottom: 29px;
   background-color: #fff;
   -webkit-box-shadow: 0 1px 15px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0 1px 15px rgba(0, 0, 0, 0.1);
@@ -572,7 +584,7 @@ textarea:-moz-placeholder {
 .mobile-menu-toggle {
   position: absolute;
   right: 0;
-  top: -20px;
+  top: -21px;
   height: 75px;
   width: 75px;
   vertical-align: middle;
@@ -1133,10 +1145,11 @@ textarea:-moz-placeholder {
   .section-page-banner.vertical-align .container-box {
     vertical-align: bottom; }
   .section-page-banner .container {
+    padding-top: 60px;
     padding-bottom: 80px; }
   .section-page-banner .banner-title,
   .section-page-banner .content {
-    max-width: 640px;
+    max-width: 750px;
     margin-top: 14px;
     margin-bottom: 1px; }
 
@@ -1149,6 +1162,8 @@ textarea:-moz-placeholder {
     margin-bottom: 0;
     padding-bottom: 0;
     border-bottom: none; }
+.section-why-we.lrg-body-text .content {
+  font: 20px/34px "Lato", Arial, sans-serif; }
 
 .section-accreditations {
   text-align: center; }
@@ -1204,6 +1219,49 @@ a.link-details {
 .magento-style .box-title {
   color: #cf3477; }
 
+.section-offers {
+  padding-top: 160px;
+  padding-bottom: 230px; }
+  .section-offers .content {
+    font: 16px/30px "Lato", Arial, sans-serif; }
+
+.section-description {
+  max-width: 910px;
+  margin-top: 25px;
+  margin-bottom: 50px;
+  font: 20px/34px "Lato", Arial, sans-serif;
+  color: #808691; }
+
+.section-compensation {
+  padding-top: 160px;
+  padding-bottom: 150px; }
+  .section-compensation .content {
+    max-width: 910px; }
+  .section-compensation .section-table-wrap {
+    margin-top: 90px; }
+
+.change {
+  display: block;
+  margin-top: 22px; }
+
+.compensation-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 20px;
+  color: #ffffff; }
+  .compensation-table thead tr th {
+    padding-bottom: 24px;
+    font-weight: 400;
+    letter-spacing: 0.2em;
+    text-align: left;
+    text-transform: uppercase;
+    border-bottom: 1px solid #ffffff; }
+  .compensation-table tbody tr td span {
+    display: inline-block;
+    text-align: right; }
+  .compensation-table tbody tr:first-child td {
+    padding-top: 12px; }
+
 /*import media styles */
 /*--------------------------------------MEDIA-----------------------------------------*/
 @media all and (max-width: 1199px) {
@@ -1230,12 +1288,13 @@ a.link-details {
     float: none; }
 
   .header {
-    height: 75px;
+    min-height: 75px;
     padding-top: 21px;
     padding-bottom: 21px; }
 
   .logo {
-    max-width: 95px; }
+    max-width: 95px;
+    margin-top: 3px; }
 
   .custom-menu-box {
     display: none; }
@@ -1253,7 +1312,7 @@ a.link-details {
   .content {
     font: 16px/30px "Lato", Arial, sans-serif; }
     .footer-block .content, .form-block .content, .sm-body-text .content {
-      font: 14px/26px "Lato", Arial, sans-serif; }
+      font: 14px/26px "Lato", Arial, sans-serif !important; }
 
   .input-style,
   textarea.input-style {
@@ -1322,7 +1381,8 @@ a.link-details {
     margin-top: 7px; }
 
   .section-page-banner .container {
-    padding-bottom: 34px; }
+    padding-bottom: 34px;
+    padding-top: 24px; }
 
   .section-why-we {
     padding-bottom: 70px; }
@@ -1347,7 +1407,10 @@ a.link-details {
     margin-bottom: 12px;
     font: 14px/26px "Lato", Arial, sans-serif; }
   .disclosure .box-title {
-    margin-bottom: 5px; } }
+    margin-bottom: 5px; }
+
+  .section-table-wrap {
+    display: none; } }
 @media all and (max-width: 782px) {
   .admin-bar .header {
     top: 46px; } }

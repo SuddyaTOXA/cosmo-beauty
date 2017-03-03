@@ -75,7 +75,7 @@
     .footer-block &,
     .form-block &,
     .sm-body-text & {
-      font: $m-font-sm-body;
+      font: $m-font-sm-body !important;
     }
   }
   .input-style,
@@ -162,6 +162,7 @@
   .section-page-banner {
     .container {
       padding-bottom: 34px;
+      padding-top: 24px;
     }
   }
   .section-why-we {
@@ -196,7 +197,9 @@
       margin-bottom: 5px;
     }
   }
-
+  .section-table-wrap {
+    display: none;
+  }
 }
 
 @media all and (max-width: 991px) {

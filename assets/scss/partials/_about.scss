@@ -4,11 +4,12 @@
     vertical-align: bottom;
   }
   .container {
+    padding-top: 60px;
     padding-bottom: 80px;
   }
   .banner-title,
   .content {
-    max-width: 640px;
+    max-width: 750px;
     margin-top: 14px;
     margin-bottom: 1px;
   }
@@ -25,6 +26,9 @@
       padding-bottom: 0;
       border-bottom: none;
     }
+  }
+  &.lrg-body-text .content {
+    font: $font-lrg-body;
   }
 }
 

@@ -72,7 +72,7 @@ img {
   .container-box {
     display: table-cell;
     width: 100%;
-    min-height: 50px;
+    min-height: 300px;
     vertical-align: middle;
   }
 }
@@ -81,6 +81,8 @@ img {
 .blue-style,
 .light-blue-style {
   .section-title,
+  .box-title,
+  .change,
   .content {
     color: $color-0;
   }
@@ -113,9 +115,16 @@ img {
       text-decoration: none;
     }
   }
+  h3 {
+    font: $font-h3;
+    margin-bottom: 20px;
+    letter-spacing: $letter-spacing-200;
+    text-transform: uppercase;
+  }
   h4 {
     margin-bottom: 20px;
     font: $font-h4;
+    letter-spacing: $letter-spacing-200;
     text-transform: uppercase;
   }
   ul, ol {

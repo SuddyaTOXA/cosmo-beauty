@@ -1,0 +1,61 @@
+.section-offers {
+  padding-top: 160px;
+  padding-bottom: 230px;
+  .content {
+    font: $font-sm-body;
+  }
+}
+
+  .section-description {
+    max-width: 910px;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    font: $font-lrg-body;
+    color: $color-8;
+  }
+
+.section-compensation {
+  padding-top: 160px;
+  padding-bottom: 150px;
+  .content {
+    max-width: 910px;
+  }
+    .section-table-wrap {
+      margin-top: 90px;
+    }
+}
+  .change {
+    display: block;
+    margin-top: 22px;
+  }
+  .compensation-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 20px;
+    color: $color-0;
+    thead {
+      tr {
+        th {
+          padding-bottom: 24px;
+          font-weight: 400;
+          letter-spacing: $letter-spacing-200;
+          text-align: left;
+          text-transform: uppercase;
+          border-bottom: 1px solid $color-0;
+        }
+      }
+    }
+    tbody {
+      tr {
+        td {
+          span {
+            display: inline-block;
+            text-align: right;
+          }
+        }
+        &:first-child td {
+          padding-top: 12px;
+        }
+      }
+    }
+  }
