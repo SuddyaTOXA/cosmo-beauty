@@ -1230,8 +1230,6 @@ a.link-details {
   max-width: 910px;
   margin-top: 25px;
   margin-bottom: 50px; }
-  .section-description .content {
-    font: 20px/34px "Lato", Arial, sans-serif; }
 
 .section-compensation {
   padding-top: 160px;
@@ -1272,6 +1270,10 @@ a.link-details {
 @media all and (max-width: 1024px) {
   .vertical-align .container {
     min-height: 440px; }
+
+  .section-description .content {
+    font-size: 17px;
+    line-height: 26px; }
 
   .wrapper {
     padding-top: 75px; }
