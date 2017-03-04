@@ -8,30 +8,32 @@ jQuery(document).ready(function( $ ) {
     });
 
     // for smooth scroll
-	if ( $('a').is('.smooth-scroll') ) {
-        smoothScroll.init({
-            selector: '.smooth-scroll', // Selector for links (must be a class, ID, data attribute, or element tag)
-            speed: 500, // Integer. How fast to complete the scroll in milliseconds
-            easing: 'easeInQuad', // Easing pattern to use
-            offset: 130 // Integer. How far to offset the scrolling anchor location in pixels
-        });
-    }
+    smoothScroll.init({
+        selector: '.smooth-scroll, a', // Selector for links (must be a class, ID, data attribute, or element tag)
+        speed: 500, // Integer. How fast to complete the scroll in milliseconds
+        easing: 'easeInQuad', // Easing pattern to use
+        offset: 130 // Integer. How far to offset the scrolling anchor location in pixels
+    });
+
 
     // for header-fixed padding
+    var header = $('#header');
     $(window).on('load resize', function() {
         setTimeout(function() {
-            var headerHeight = $('#header').outerHeight();
-            $('.wrapper').css('padding-top', headerHeight);
-
-            if ($(window).width() <= '782' && $('body').hasClass('admin-bar')) {
-                $('.mobile-menu-wrap').css('top', headerHeight + 46);
-            } else if ($(window).width() <= '1024' && $('body').hasClass('admin-bar')) {
-                $('.mobile-menu-wrap').css('top', headerHeight + 32);
-            } else {
-                $('.mobile-menu-wrap').css('top', headerHeight);
-            }
-        }, 50);
+            var headerHeight = header.outerHeight();
+            $(document.body).children('.wrapper').css('padding-top', headerHeight);
+        }, 10);
     });
+    // for header scrolling class
+    $(window).on('load scroll resize', function() {
+        var st2 = $(this).scrollTop();
+
+        if (st2 > 0)
+            header.addClass('scrolling');
+        else
+            header.removeClass('scrolling');
+    });
+
 
     // for select language
     $('.language-box-title').click(function() {

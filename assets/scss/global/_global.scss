@@ -227,3 +227,17 @@ img {
     height: 650px;
   }
 }
+.wrap-404 {
+  text-align: center;
+  padding: 10px 0 40px;
+  color: $color-2;
+  font-size: 68px;
+  letter-spacing: 0;
+  .error-404 {
+    display: block;
+    margin-bottom: -26px;
+    font-size: 200px;
+    line-height: 1;
+    font-weight: 700;
+  }
+}

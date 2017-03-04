@@ -224,8 +224,13 @@
 }
 
 @media all and (max-width: 782px) {
-  .admin-bar .header {
-    top: 46px;
+  .admin-bar {
+    .header {
+      top: 46px;
+    }
+    .mobile-menu-wrap {
+      top: 122px;
+    }
   }
 }
 
@@ -252,8 +257,13 @@
 }
 
 @media all and (max-width: 600px) {
-  .admin-bar .header {
-    top: 0;
+  .admin-bar {
+    .header.scrolling {
+      top: 0;
+      .mobile-menu-wrap {
+        top: 76px;
+      }
+    }
   }
 }
 
@@ -268,7 +278,14 @@
 }
 
 @media all and (max-width: 480px) {
-
+  .wrap-404 {
+    padding: 0 0 10px;
+    font-size: 45px;
+    .error-404 {
+      margin-bottom: -18px;
+      font-size: 140px;
+    }
+  }
 }
 
 @media all and (max-width: 420px) {
