@@ -97,11 +97,14 @@ textarea:-moz-placeholder {
   text-align: center;
   background: #ffffff;
 }
-.check-style input[type=checkbox]:checked + span:before {
+.check-style input[type=checkbox]:checked + span:after {
+  position: absolute;
   font-family: $font-main;
-  content: "\2715 ";
-  font-size: 22px;
-  line-height: 16px;
+  content: "\2715";
+  font-size: 23px;
+  line-height: 15px;
+  left: 0;
+  top: 2px;
 }
 .radio-style span:before {
   content: '';

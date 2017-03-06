@@ -464,11 +464,14 @@ textarea:-moz-placeholder {
   text-align: center;
   background: #ffffff; }
 
-.check-style input[type=checkbox]:checked + span:before {
+.check-style input[type=checkbox]:checked + span:after {
+  position: absolute;
   font-family: "Lato", Arial, sans-serif;
-  content: "\2715 ";
-  font-size: 22px;
-  line-height: 16px; }
+  content: "\2715";
+  font-size: 23px;
+  line-height: 15px;
+  left: 0;
+  top: 2px; }
 
 .radio-style span:before {
   content: '';
@@ -826,7 +829,7 @@ textarea:-moz-placeholder {
       margin-left: 0; }
   .footer-social i {
     font-size: 16px;
-    line-height: 30px;
+    line-height: 28px;
     color: #fff;
     -webkit-transition: 0.2s;
     -khtml-transition: 0.2s;
