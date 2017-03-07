@@ -1,0 +1,81 @@
+.section-why-we.admissions {
+  padding-bottom: 170px;
+}
+  .two-coll-list {
+    -webkit-columns: 500px 2;
+    -moz-columns: 500px 2;
+    columns: 500px 2;
+    -webkit-column-gap: 80px;
+    -moz-column-gap: 80px;
+    column-gap: 80px;
+    text-align: left;
+  }
+  .rate-list {
+    > li {
+      margin-bottom: 10px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      span {
+        margin-right: 20px;
+        top: 3px;
+      }
+    }
+  }
+  .rate {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    @include border-radius(50%);
+    background-color: $color-2;
+  }
+  .rate-bar-list {
+    margin: 70px -35px -70px;
+    text-align: center;
+    > li {
+      display: inline-block;
+      padding: 0 35px 70px;
+    }
+  }
+
+  .rate-big {
+    overflow: hidden;
+    position: relative;
+    display: block;
+    width: 174px;
+    height: 174px;
+    border: 1px solid $color-7;
+    @include border-radius(50%);
+    &:after {
+      position: absolute;
+      content: '';
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      background: linear-gradient( $color-7, transparent 1px);
+      background-size: 6px 6px;
+      background-position: center center;
+      transform: rotate(-45deg);
+    }
+    &:before {
+      position: absolute;
+      content: '';
+      left: 50%;
+      top: 50%;
+      @include transform();
+      @include border-radius(50%);
+    }
+    span {
+      display: block;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      font-size: 20px;
+      text-align: center;
+      @include transform();
+      @include border-radius(50%);
+      color: $color-0;
+    }
+  }

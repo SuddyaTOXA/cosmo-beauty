@@ -234,6 +234,8 @@ img {
     font: 16px/30px "Lato", Arial, sans-serif; }
     .form-block .content *:last-child {
       margin-bottom: 0; }
+  .section-why-we .section-description .content, .section-description .content {
+    font: 20px/34px "Lato", Arial, sans-serif; }
 
 .coll-8 {
   width: 66.66667%; }
@@ -804,42 +806,6 @@ textarea:-moz-placeholder {
   color: #ffffff;
   text-transform: uppercase; }
 
-.footer-social {
-  margin-bottom: 46px; }
-  .footer-social > li {
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    margin-left: 16px;
-    text-align: center;
-    -webkit-border-radius: 50%;
-    -khtml-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-    border-radius: 50%;
-    border: 1px solid #fff;
-    background-color: transparent;
-    cursor: pointer; }
-    .footer-social > li:hover {
-      opacity: 0.7; }
-      .footer-social > li:hover i {
-        opacity: 0.7; }
-    .footer-social > li:first-child {
-      margin-left: 0; }
-  .footer-social i {
-    font-size: 16px;
-    line-height: 28px;
-    color: #fff;
-    -webkit-transition: 0.2s;
-    -khtml-transition: 0.2s;
-    -moz-transition: 0.2s;
-    -ms-transition: 0.2s;
-    -o-transition: 0.2s;
-    transition: 0.2s; }
-    .footer-social i .fa-facebook {
-      font-size: 14px; }
-
 .power-by,
 .copyright {
   font-size: 12px;
@@ -945,6 +911,10 @@ textarea:-moz-placeholder {
   display: inline-block;
   margin-bottom: 46px;
   margin-left: 40px; }
+  .footer .social-list {
+    margin-left: 0;
+    float: none;
+    display: block; }
   .custom-mob-menu-box .social-list {
     float: none;
     display: block;
@@ -1280,6 +1250,108 @@ a.link-details {
   .compensation-table tbody tr:first-child td {
     padding-top: 12px; }
 
+.section-why-we.admissions {
+  padding-bottom: 170px; }
+
+.two-coll-list {
+  -webkit-columns: 500px 2;
+  -moz-columns: 500px 2;
+  columns: 500px 2;
+  -webkit-column-gap: 80px;
+  -moz-column-gap: 80px;
+  column-gap: 80px;
+  text-align: left; }
+
+.rate-list > li {
+  margin-bottom: 10px; }
+  .rate-list > li:last-child {
+    margin-bottom: 0; }
+  .rate-list > li span {
+    margin-right: 20px;
+    top: 3px; }
+
+.rate {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  -webkit-border-radius: 50%;
+  -khtml-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  background-color: #cf3477; }
+
+.rate-bar-list {
+  margin: 70px -35px -70px;
+  text-align: center; }
+  .rate-bar-list > li {
+    display: inline-block;
+    padding: 0 35px 70px; }
+
+.rate-big {
+  overflow: hidden;
+  position: relative;
+  display: block;
+  width: 174px;
+  height: 174px;
+  border: 1px solid #969dac;
+  -webkit-border-radius: 50%;
+  -khtml-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%; }
+  .rate-big:after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: linear-gradient(#969dac, transparent 1px);
+    background-size: 6px 6px;
+    background-position: center center;
+    transform: rotate(-45deg); }
+  .rate-big:before {
+    position: absolute;
+    content: '';
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -khtml-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-border-radius: 50%;
+    -khtml-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%; }
+  .rate-big span {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    font-size: 20px;
+    text-align: center;
+    -webkit-transform: translate(-50%, -50%);
+    -khtml-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-border-radius: 50%;
+    -khtml-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    color: #ffffff; }
+
 /*import media styles */
 /*--------------------------------------MEDIA-----------------------------------------*/
 @media all and (max-width: 1199px) {
@@ -1288,10 +1360,6 @@ a.link-details {
 @media all and (max-width: 1024px) {
   .vertical-align .container {
     min-height: 440px; }
-
-  .section-description .content {
-    font-size: 17px;
-    line-height: 26px; }
 
   .wrapper {
     padding-top: 75px; }
@@ -1432,7 +1500,15 @@ a.link-details {
     margin-bottom: 5px; }
 
   .section-table-wrap {
-    display: none; } }
+    display: none; }
+
+  .section-why-we .section-description .content,
+  .section-description .content {
+    font-size: 17px;
+    line-height: 26px; }
+
+  .section-why-we.admissions {
+    padding-bottom: 70px; } }
 @media all and (max-width: 782px) {
   .admin-bar .header {
     top: 46px; }

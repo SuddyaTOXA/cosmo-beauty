@@ -194,7 +194,12 @@ img {
       }
     }
   }
+  .section-why-we .section-description &,
+  .section-description & {
+    font: $font-lrg-body;
+  }
 }
+
 .coll-8 {
   width: (100% / 12) * 8;
 }

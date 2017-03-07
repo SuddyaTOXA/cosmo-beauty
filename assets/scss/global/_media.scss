@@ -30,12 +30,6 @@
   .vertical-align .container {
       min-height: 440px;
   }
-  .section-description {
-    .content {
-      font-size: 17px;
-      line-height: 26px;
-    }
-  }
   .wrapper {
     padding-top: 75px;
   }
@@ -208,6 +202,14 @@
   }
   .section-table-wrap {
     display: none;
+  }
+  .section-why-we .section-description .content,
+  .section-description .content {
+    font-size: 17px;
+    line-height: 26px;
+  }
+  .section-why-we.admissions {
+    padding-bottom: 70px;
   }
 }
 

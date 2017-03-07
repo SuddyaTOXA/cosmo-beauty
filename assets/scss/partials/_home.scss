@@ -98,6 +98,11 @@
   display: inline-block;
   margin-bottom: 46px;
   margin-left: 40px;
+  .footer & {
+    margin-left: 0;
+    float: none;
+    display: block;
+  }
   .custom-mob-menu-box & {
     float: none;
     display: block;

@@ -44,38 +44,6 @@
       color: $color-0;
       text-transform: uppercase;
     }
-    .footer-social {
-      margin-bottom: 46px;
-      > li {
-        display: inline-block;
-        width: 30px;
-        height: 30px;
-        margin-left: 16px;
-        text-align: center;
-        @include border-radius(50%);
-        border: 1px solid #fff;
-        background-color: transparent;
-        cursor: pointer;
-        &:hover {
-          opacity: 0.7;
-          i {
-            opacity: 0.7;
-          }
-        }
-        &:first-child {
-          margin-left: 0;
-        }
-      }
-      i {
-        font-size: 16px;
-        line-height: 28px;
-        color: #fff;
-        @include transition($transition-link);
-        .fa-facebook {
-          font-size: 14px;
-        }
-      }
-    }
     .power-by,
     .copyright {
       font-size: 12px;
