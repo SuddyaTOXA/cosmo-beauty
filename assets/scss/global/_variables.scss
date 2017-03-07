@@ -1,10 +1,12 @@
 /*fonts*/
 $font-main: 'Lato', Arial, sans-serif;
+$font-myriad: 'Myriad Pro', Arial, sans-serif;
 
 $font-h1: #{40px/52px} $font-main;
 $font-h2: #{30px/44px} $font-main;
 $font-h3: #{22px/32px} $font-main;
 $font-h4: #{16px/24px} $font-main;
+$font-h4-myriad: #{16px/24px} $font-myriad;
 $font-lrg-body: #{20px/34px} $font-main;
 $font-sm-body: #{16px/30px} $font-main;
 $font-primary-nav: #{10px/12px} $font-main;

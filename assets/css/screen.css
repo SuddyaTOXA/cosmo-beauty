@@ -234,6 +234,8 @@ img {
     font: 16px/30px "Lato", Arial, sans-serif; }
     .form-block .content *:last-child {
       margin-bottom: 0; }
+  .services-box .content {
+    font: 14px/26px "Lato", Arial, sans-serif; }
   .section-why-we .section-description .content, .section-description .content {
     font: 20px/34px "Lato", Arial, sans-serif; }
 
@@ -280,6 +282,17 @@ img {
     line-height: 1;
     font-weight: 700; }
 
+/* fonts */
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url("../fonts/MYRIADPROREGULAR.eot") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url("../fonts/MYRIADPROREGULAR.woff") format("opentype"), url("../fonts/MYRIADPROREGULAR.ttf") format("truetype"), url("../fonts/MYRIADPROREGULAR.svg#MYRIADPROREGULAR") format("svg");
+  font-weight: normal;
+  font-style: normal; }
 a.btn, .btn {
   position: relative;
   display: inline-block;
@@ -1352,6 +1365,61 @@ a.link-details {
     border-radius: 50%;
     color: #ffffff; }
 
+.section-services {
+  padding-bottom: 60px; }
+
+.services-description {
+  max-width: 840px;
+  margin-bottom: 122px;
+  padding-bottom: 125px;
+  border-bottom: 1px solid #969dac; }
+  .services-description .content {
+    margin-top: 20px;
+    color: #3b4880;
+    font-style: italic; }
+
+.services-title {
+  margin-bottom: 36px;
+  font: 40px/52px "Lato", Arial, sans-serif;
+  line-height: 1;
+  letter-spacing: 0.25em;
+  color: #3b4880;
+  text-transform: uppercase; }
+
+.services-list {
+  margin-top: 68px;
+  margin-bottom: 75px;
+  -webkit-columns: 500px 2;
+  -moz-columns: 500px 2;
+  columns: 500px 2;
+  -webkit-column-gap: 80px;
+  -moz-column-gap: 80px;
+  column-gap: 80px;
+  text-align: left; }
+  .services-list > li {
+    width: 100%;
+    vertical-align: top;
+    padding-top: 18px;
+    padding-bottom: 25px;
+    border-top: 1px solid #969dac;
+    display: inline-block; }
+
+.services-box {
+  margin-bottom: 18px; }
+
+.services-right-box {
+  float: right;
+  width: 50px;
+  padding-left: 10px;
+  text-align: right; }
+
+.services-left-box {
+  overflow: hidden; }
+
+.services-box-title {
+  font: 16px/24px "Myriad Pro", Arial, sans-serif;
+  margin-bottom: 10px; }
+
 /*import media styles */
 /*--------------------------------------MEDIA-----------------------------------------*/
 @media all and (max-width: 1199px) {
@@ -1503,12 +1571,36 @@ a.link-details {
     display: none; }
 
   .section-why-we .section-description .content,
+  .services-description .content,
   .section-description .content {
     font-size: 17px;
     line-height: 26px; }
 
   .section-why-we.admissions {
-    padding-bottom: 70px; } }
+    padding-bottom: 70px; }
+
+  .services-title {
+    font: 32px/42px "Lato", Arial, sans-serif; }
+
+  .services-box-title {
+    font-size: 14px;
+    line-height: 26px; }
+
+  .section-services {
+    padding-bottom: 16px; }
+
+  .services-box .content {
+    font-size: 12px;
+    line-height: 22px; }
+
+  .services-description {
+    max-width: 840px;
+    margin-bottom: 60px;
+    padding-bottom: 40px; }
+
+  .services-list {
+    margin-top: 0;
+    margin-bottom: 5px; } }
 @media all and (max-width: 782px) {
   .admin-bar .header {
     top: 46px; }

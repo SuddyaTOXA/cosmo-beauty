@@ -204,6 +204,7 @@
     display: none;
   }
   .section-why-we .section-description .content,
+  .services-description .content,
   .section-description .content {
     font-size: 17px;
     line-height: 26px;
@@ -211,6 +212,30 @@
   .section-why-we.admissions {
     padding-bottom: 70px;
   }
+  .services-title {
+    font: $m-font-h1;
+  }
+  .services-box-title {
+    font-size: 14px;
+    line-height: 26px;
+  }
+  .section-services {
+    padding-bottom: 16px;
+  }
+  .services-box .content {
+    font-size: 12px;
+    line-height: 22px;
+  }
+  .services-description {
+    max-width: 840px;
+    margin-bottom: 60px;
+    padding-bottom: 40px;
+  }
+  .services-list {
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+
 }
 
 @media all and (max-width: 991px) {

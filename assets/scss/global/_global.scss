@@ -194,6 +194,9 @@ img {
       }
     }
   }
+  .services-box & {
+    font: $m-font-sm-body;
+  }
   .section-why-we .section-description &,
   .section-description & {
     font: $font-lrg-body;
