@@ -100,4 +100,30 @@ jQuery(document).ready(function( $ ) {
                 console.log(maxWidth);
         }
     });
+
+    //validate form
+    if ($('section').hasClass('section-connect')) {
+        console.log('Form');
+        // just for the demos, avoids form submit
+        $( ".section-connect form" ).validate({
+            rules: {
+                date_d: {
+                    required: true,
+                    rangelength: [1, 2],
+                    range: [1, 31]
+                },
+                date_m: {
+                    required: true,
+                    rangelength: [1, 2],
+                    range: [1, 12]
+                },
+                date_y: {
+                    required: true,
+                    rangelength: [4, 4],
+                    range: [1990, 2050]
+                }
+            }
+        });
+
+    }
 });
