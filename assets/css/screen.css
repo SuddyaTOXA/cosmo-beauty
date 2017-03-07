@@ -1266,6 +1266,11 @@ a.link-details {
 .section-why-we.admissions {
   padding-bottom: 170px; }
 
+.admissions .section-title {
+  margin-bottom: 50px; }
+.admissions .box-title {
+  margin-bottom: 32px; }
+
 .two-coll-list {
   -webkit-columns: 500px 2;
   -moz-columns: 500px 2;
@@ -1375,8 +1380,7 @@ a.link-details {
   border-bottom: 1px solid #969dac; }
   .services-description .content {
     margin-top: 20px;
-    color: #3b4880;
-    font-style: italic; }
+    color: #3b4880; }
 
 .services-title {
   margin-bottom: 36px;
@@ -1600,7 +1604,19 @@ a.link-details {
 
   .services-list {
     margin-top: 0;
-    margin-bottom: 5px; } }
+    margin-bottom: 5px; }
+
+  .rate-bar-list {
+    margin-left: -25px;
+    margin-right: -25px; }
+    .rate-bar-list > li {
+      padding-left: 25px;
+      padding-right: 25px; }
+
+  .admissions .section-title {
+    margin-bottom: 20px; }
+  .admissions .box-title {
+    margin-bottom: 20px; } }
 @media all and (max-width: 782px) {
   .admin-bar .header {
     top: 46px; }

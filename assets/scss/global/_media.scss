@@ -235,7 +235,19 @@
     margin-top: 0;
     margin-bottom: 5px;
   }
-
+  .rate-bar-list {
+    margin-left: -25px;
+    margin-right: -25px;
+    > li {
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+  }
+  .admissions {
+    .section-title {
+      margin-bottom: 20px;
+    }
+  }
 }
 
 @media all and (max-width: 991px) {
