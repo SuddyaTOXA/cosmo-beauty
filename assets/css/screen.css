@@ -1427,6 +1427,39 @@ a.link-details {
 .section-courses {
   padding-bottom: 240px; }
 
+.banner-link-list {
+  margin-top: 20px; }
+  .banner-link-list > li {
+    position: relative;
+    display: inline-block;
+    padding-right: 30px; }
+    .banner-link-list > li:last-child {
+      padding-right: 0; }
+    .banner-link-list > li:after {
+      position: absolute;
+      content: '';
+      width: 4px;
+      height: 4px;
+      right: 15px;
+      top: 50%;
+      margin-top: -2px;
+      -webkit-border-radius: 50%;
+      -khtml-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+      border-radius: 50%;
+      background-color: #ffffff; }
+    .banner-link-list > li a {
+      margin-bottom: 20px;
+      font: 16px/24px "Lato", Arial, sans-serif;
+      color: #ffffff;
+      letter-spacing: 0.2em;
+      text-transform: uppercase; }
+      .banner-link-list > li a:hover {
+        opacity: 0.7;
+        text-decoration: none; }
+
 .courses-list > li {
   padding-bottom: 120px;
   margin-bottom: 108px;
@@ -1496,14 +1529,25 @@ a.link-details {
   .table-box table {
     margin: 0 auto; }
     .table-box table tbody tr td {
-      padding-right: 90px;
+      width: 200px;
+      padding-left: 5px;
+      padding-right: 5px;
       padding-bottom: 12px; }
+      .table-box table tbody tr td:last-child {
+        width: 160px; }
     .table-box table tbody tr:last-child td {
       padding-bottom: 17px; }
     .table-box table tfoot {
       border-top: 1px solid #ffffff; }
       .table-box table tfoot tr td {
+        width: 200px;
+        padding-left: 5px;
+        padding-right: 5px;
         padding-top: 12px; }
+        .table-box table tfoot tr td:last-child {
+          width: 160px; }
+      .table-box table tfoot tr:last-child td {
+        padding-bottom: 17px; }
 
 .table-wrap {
   padding: 46px 0 46px;
@@ -1759,10 +1803,17 @@ a.link-details {
 
   .curriculum-list {
     margin-top: -4px;
-    margin-bottom: 20px; }
+    margin-bottom: 10px;
+    -webkit-columns: 200px 2;
+    -moz-columns: 200px 2;
+    columns: 200px 2;
+    -webkit-column-gap: 80px;
+    -moz-column-gap: 80px;
+    column-gap: 80px;
+    text-align: left; }
     .curriculum-list > li {
-      width: 49%;
-      margin-bottom: 15px; }
+      width: 100%;
+      margin-bottom: 0; }
 
   .table-box,
   .table-overview {
@@ -1780,7 +1831,14 @@ a.link-details {
     top: 122px; } }
 @media all and (max-width: 640px) {
   .table-box table tbody tr td {
-    padding-right: 30px; } }
+    width: 140px; }
+    .table-box table tbody tr td:last-child {
+      width: 100px; }
+
+  .table-box table tfoot tr td {
+    width: 140px; }
+    .table-box table tfoot tr td:last-child {
+      width: 100px; } }
 @media all and (max-width: 600px) {
   .admin-bar .header.scrolling {
     top: 0; }
