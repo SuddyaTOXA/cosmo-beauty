@@ -133,11 +133,11 @@
   }
   i {
     font-size: 16px;
-    line-height: 30px;
+    line-height: 28px;
     color: #fff;
     @include transition($transition-link);
     .custom-mob-menu-box & {
-      color:  $color-9;
+      color: $color-9;
     }
     .fa-facebook {
       font-size: 14px;
