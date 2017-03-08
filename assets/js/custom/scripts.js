@@ -1,11 +1,18 @@
 jQuery(document).ready(function( $ ) {
 
+    // for placeholder link
+    $('.prevent, a[href=#]').on('click', function(event){
+        event.preventDefault();
+    });
+
+
     // for burger menu
     $('.mobile-menu-toggle, .mobile-menu-overlay').on('click', function(){
         $('.mobile-menu-toggle').toggleClass('active');
         $('.mobile-menu-wrap').toggleClass('showing');
         $(document.body).toggleClass('overflow');
     });
+
 
     // for smooth scroll
     smoothScroll.init({
@@ -45,6 +52,7 @@ jQuery(document).ready(function( $ ) {
 
     });
 
+
     //for banner slider
     var swiper = new Swiper('.swiper-container', {
         pagination: '.swiper-pagination',
@@ -54,6 +62,7 @@ jQuery(document).ready(function( $ ) {
         loop: true,
         paginationClickable: true
     });
+
 
     $(window).on('load resize', function() {
         var socialFooter = $('.footer-social'),
@@ -101,29 +110,25 @@ jQuery(document).ready(function( $ ) {
         }
     });
 
-    //validate form
-    if ($('section').hasClass('section-connect')) {
-        console.log('Form');
-        // just for the demos, avoids form submit
-        $( ".section-connect form" ).validate({
-            rules: {
-                date_d: {
-                    required: true,
-                    rangelength: [1, 2],
-                    range: [1, 31]
-                },
-                date_m: {
-                    required: true,
-                    rangelength: [1, 2],
-                    range: [1, 12]
-                },
-                date_y: {
-                    required: true,
-                    rangelength: [4, 4],
-                    range: [1990, 2050]
-                }
-            }
-        });
 
-    }
+    //validate form
+    $( ".section-connect form" ).validate({
+        rules: {
+            date_d: {
+                required: true,
+                rangelength: [1, 2],
+                range: [1, 31]
+            },
+            date_m: {
+                required: true,
+                rangelength: [1, 2],
+                range: [1, 12]
+            },
+            date_y: {
+                required: true,
+                rangelength: [4, 4],
+                range: [1990, 2050]
+            }
+        }
+    });
 });
