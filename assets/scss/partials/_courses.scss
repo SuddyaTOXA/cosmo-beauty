@@ -1,0 +1,129 @@
+.section-courses {
+  padding-bottom: 240px;
+}
+  .courses-list {
+    > li {
+      padding-bottom: 120px;
+      margin-bottom: 108px;
+      border-bottom: 1px solid $color-7;
+      &:last-child {
+        padding-bottom: 0;
+        margin-bottom: 0;
+        border-bottom: none;
+      }
+    }
+  }
+      .courses-short-info {
+        margin-bottom: 66px;
+        padding-bottom: 70px;
+        border-bottom: 1px solid $color-7;
+        .box-title {
+          margin-bottom: 30px;
+          color: $color-3;
+        }
+      }
+        .course-title {
+          margin-bottom: 16px;
+          font: $font-h1;
+          color: $color-3;
+          text-transform: uppercase;
+          letter-spacing: $letter-spacing-250;
+        }
+        .hour-list {
+          overflow: hidden;
+          margin-top: 56px;
+          margin-bottom: 42px;
+          > li {
+            display: inline-block;
+            vertical-align: top;
+            width: ((100% / 12) * 4) - 1%;
+            padding-right: 20px;
+            margin-bottom: 40px;
+          }
+          .box-title {
+            margin-bottom: 10px;
+          }
+          .content {
+            font: $font-sm-body;
+          }
+        }
+
+        .curriculum-list {
+          overflow: hidden;
+          margin-top: 32px;
+          margin-bottom: 45px;
+          .content {
+            font: $font-sm-body;
+            a {
+              color: $color-7;
+            }
+          }
+          > li {
+            display: inline-block;
+            vertical-align: top;
+            width: ((100% / 12) * 3) - 1%;
+            padding-right: 72px;
+            margin-bottom: 40px;
+          }
+        }
+      .overview-bottom-box {
+        margin-bottom: -40px;
+      }
+        .table-box,
+        .table-overview {
+          overflow: hidden;
+          width: 50%;
+          margin-bottom: 40px;
+        }
+        .table-box {
+          padding-right: 25px;
+          color: $color-0;
+          table {
+            margin: 0 auto;
+            tbody {
+              tr {
+                td {
+                  padding-right: 90px;
+                  padding-bottom: 12px;
+                }
+                &:last-child {
+                  td {
+                    padding-bottom: 17px;
+                  }
+                }
+              }
+            }
+            tfoot {
+              border-top: 1px solid $color-0;
+              tr {
+                td {
+                  padding-top: 12px;
+                }
+              }
+            }
+          }
+        }
+          .table-wrap {
+            padding: 46px 0 46px;
+            background-color: $color-2;
+          }
+        .table-overview {
+          float: right;
+          padding-left: 25px;
+          .content {
+            font: $font-sm-body;
+          }
+        }
+
+        .table-pink-style {
+          background-color: $color-1;
+        }
+        .table-red-style {
+          background-color: $color-2;
+        }
+        .table-blue-style {
+           background-color: $color-4;
+         }
+        .table-blue-light-style {
+          background-color: $color-5;
+       }

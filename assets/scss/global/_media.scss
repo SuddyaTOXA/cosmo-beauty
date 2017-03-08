@@ -249,6 +249,67 @@
       margin-bottom: 20px;
     }
   }
+  .courses-short-info {
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+  }
+    .course-title {
+    margin-bottom: 2px;
+    font-size: 26px;
+    line-height: 36px;
+  }
+  .section-courses {
+    padding-top: 90px;
+    padding-bottom: 90px;
+    .box-title {
+      font: $m-font-h4;
+    }
+    .section-title {
+      margin-bottom: 10px;
+      font: $m-font-h3;
+    }
+  }
+  .table-overview .content,
+  .curriculum-list .content,
+  .hour-list .content {
+    font: $m-font-sm-body;
+  }
+  .hour-list {
+    margin-top: 34px;
+    margin-bottom: 22px;
+    > li {
+      width: 100%;
+      margin-bottom: 15px;
+      .box-title {
+        display: none;
+        margin-bottom: 20px;
+      }
+      &:first-child .box-title {
+        display: block;
+      }
+    }
+    .content em {
+      color: $color-5;
+    }
+  }
+  .curriculum-list {
+    margin-top: -4px;
+    margin-bottom: 20px;
+    > li {
+      width: ((100% / 12) * 6) - 1%;
+      margin-bottom: 15px;
+    }
+  }
+  .table-box,
+  .table-overview {
+    float: none;
+    width: 100%;
+    padding: 0;
+  }
+  .courses-list > li {
+    padding-bottom: 50px;
+    margin-bottom: 44px;
+  }
 }
 
 @media all and (max-width: 991px) {
@@ -293,7 +354,9 @@
 }
 
 @media all and (max-width: 640px) {
-
+  .table-box table tbody tr td {
+    padding-right: 30px;
+  }
 }
 
 @media all and (max-width: 600px) {

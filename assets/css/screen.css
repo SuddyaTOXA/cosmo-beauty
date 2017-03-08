@@ -1424,6 +1424,109 @@ a.link-details {
   font: 16px/24px "Myriad Pro", Arial, sans-serif;
   margin-bottom: 10px; }
 
+.section-courses {
+  padding-bottom: 240px; }
+
+.courses-list > li {
+  padding-bottom: 120px;
+  margin-bottom: 108px;
+  border-bottom: 1px solid #969dac; }
+  .courses-list > li:last-child {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border-bottom: none; }
+
+.courses-short-info {
+  margin-bottom: 66px;
+  padding-bottom: 70px;
+  border-bottom: 1px solid #969dac; }
+  .courses-short-info .box-title {
+    margin-bottom: 30px;
+    color: #3b4880; }
+
+.course-title {
+  margin-bottom: 16px;
+  font: 40px/52px "Lato", Arial, sans-serif;
+  color: #3b4880;
+  text-transform: uppercase;
+  letter-spacing: 0.25em; }
+
+.hour-list {
+  overflow: hidden;
+  margin-top: 56px;
+  margin-bottom: 42px; }
+  .hour-list > li {
+    display: inline-block;
+    vertical-align: top;
+    width: 32.33333%;
+    padding-right: 20px;
+    margin-bottom: 40px; }
+  .hour-list .box-title {
+    margin-bottom: 10px; }
+  .hour-list .content {
+    font: 16px/30px "Lato", Arial, sans-serif; }
+
+.curriculum-list {
+  overflow: hidden;
+  margin-top: 32px;
+  margin-bottom: 45px; }
+  .curriculum-list .content {
+    font: 16px/30px "Lato", Arial, sans-serif; }
+    .curriculum-list .content a {
+      color: #969dac; }
+  .curriculum-list > li {
+    display: inline-block;
+    vertical-align: top;
+    width: 24%;
+    padding-right: 72px;
+    margin-bottom: 40px; }
+
+.overview-bottom-box {
+  margin-bottom: -40px; }
+
+.table-box,
+.table-overview {
+  overflow: hidden;
+  width: 50%;
+  margin-bottom: 40px; }
+
+.table-box {
+  padding-right: 25px;
+  color: #ffffff; }
+  .table-box table {
+    margin: 0 auto; }
+    .table-box table tbody tr td {
+      padding-right: 90px;
+      padding-bottom: 12px; }
+    .table-box table tbody tr:last-child td {
+      padding-bottom: 17px; }
+    .table-box table tfoot {
+      border-top: 1px solid #ffffff; }
+      .table-box table tfoot tr td {
+        padding-top: 12px; }
+
+.table-wrap {
+  padding: 46px 0 46px;
+  background-color: #cf3477; }
+
+.table-overview {
+  float: right;
+  padding-left: 25px; }
+  .table-overview .content {
+    font: 16px/30px "Lato", Arial, sans-serif; }
+
+.table-pink-style {
+  background-color: #ff7f86; }
+
+.table-red-style {
+  background-color: #cf3477; }
+
+.table-blue-style {
+  background-color: #16365a; }
+
+.table-blue-light-style {
+  background-color: #0087a0; }
+
 /*import media styles */
 /*--------------------------------------MEDIA-----------------------------------------*/
 @media all and (max-width: 1199px) {
@@ -1615,12 +1718,69 @@ a.link-details {
       padding-right: 25px; }
 
   .admissions .section-title {
-    margin-bottom: 20px; } }
+    margin-bottom: 20px; }
+
+  .courses-short-info {
+    margin-bottom: 40px;
+    padding-bottom: 40px; }
+
+  .course-title {
+    margin-bottom: 2px;
+    font-size: 26px;
+    line-height: 36px; }
+
+  .section-courses {
+    padding-top: 90px;
+    padding-bottom: 90px; }
+    .section-courses .box-title {
+      font: 16px/24px "Lato", Arial, sans-serif; }
+    .section-courses .section-title {
+      margin-bottom: 10px;
+      font: 22px/32px "Lato", Arial, sans-serif; }
+
+  .table-overview .content,
+  .curriculum-list .content,
+  .hour-list .content {
+    font: 14px/26px "Lato", Arial, sans-serif; }
+
+  .hour-list {
+    margin-top: 34px;
+    margin-bottom: 22px; }
+    .hour-list > li {
+      width: 100%;
+      margin-bottom: 15px; }
+      .hour-list > li .box-title {
+        display: none;
+        margin-bottom: 20px; }
+      .hour-list > li:first-child .box-title {
+        display: block; }
+    .hour-list .content em {
+      color: #0087a0; }
+
+  .curriculum-list {
+    margin-top: -4px;
+    margin-bottom: 20px; }
+    .curriculum-list > li {
+      width: 49%;
+      margin-bottom: 15px; }
+
+  .table-box,
+  .table-overview {
+    float: none;
+    width: 100%;
+    padding: 0; }
+
+  .courses-list > li {
+    padding-bottom: 50px;
+    margin-bottom: 44px; } }
 @media all and (max-width: 782px) {
   .admin-bar .header {
     top: 46px; }
   .admin-bar .mobile-menu-wrap {
     top: 122px; } }
+@media all and (max-width: 640px) {
+  .table-box table tbody tr td {
+    padding-right: 30px; } }
 @media all and (max-width: 600px) {
   .admin-bar .header.scrolling {
     top: 0; }
