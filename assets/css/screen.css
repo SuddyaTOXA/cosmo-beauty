@@ -1374,11 +1374,11 @@ a.link-details {
   padding-bottom: 60px; }
 
 .services-description {
-  max-width: 840px;
   margin-bottom: 122px;
   padding-bottom: 125px;
   border-bottom: 1px solid #969dac; }
   .services-description .content {
+    max-width: 840px;
     margin-top: 20px;
     color: #3b4880; }
 
