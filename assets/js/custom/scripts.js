@@ -1,7 +1,7 @@
 jQuery(document).ready(function( $ ) {
 
     // for placeholder link
-    $('.prevent, a[href=#]').on('click', function(event){
+    $('.prevent, .btn-modal, a[href=#]').on('click', function(event){
         event.preventDefault();
     });
 
@@ -134,8 +134,14 @@ jQuery(document).ready(function( $ ) {
         });
     }
 
+    //for modal form
+    $('.btn-modal').on('click', function () {
+        $('.modal-form').toggleClass('open');
+        $('body').toggleClass('overflow');
+    });
+
     // for blog grid
-    function blogGrig() {
+    function blogGrid() {
         $(window).on('load resize', function() {
             var width = $(window).width();
 
@@ -242,7 +248,7 @@ jQuery(document).ready(function( $ ) {
         });
     }
 
-    blogGrig();
+    blogGrid();
 
 
 });
