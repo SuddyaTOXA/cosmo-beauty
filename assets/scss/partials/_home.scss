@@ -418,6 +418,10 @@
       left: -4px;
       background-color: #ffffff;
     }
+    &:hover:after,
+    &:hover:before{
+      opacity: 0.7;
+    }
     &:after {
       -moz-transform: rotate(45deg);
       -ms-transform: rotate(45deg);

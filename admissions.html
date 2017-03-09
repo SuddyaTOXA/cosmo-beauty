@@ -170,34 +170,26 @@
                     </ul>
 
                     <ul class="rate-bar-list">
-                        <li><span class="rate-big completion color-pink"><span>84%</span></span></li>
-                        <li><span class="rate-big licensure color-blue"><span>93%</span></span></li>
-                        <li><span class="rate-big placement color-blue-light"><span>67%</span></span></li>
+                        <li><span class="rate-big completion color-pink"><span data-percentage="0.84" class="rate-range"></span><span class="counter">84%</span></span></li>
+                        <li><span class="rate-big licensure color-blue"><span data-percentage="0.93" class="rate-range"></span><span class="counter">93%</span></span></li>
+                        <li><span class="rate-big placement color-blue-light"><span data-percentage="0.67" class="rate-range"></span><span class="counter">67%</span></span></li>
                     </ul>
                     <style>
                         .rate.color-pink,
-                        .rate-big.color-pink:before {
+                        .rate-big.color-pink .rate-range{
                             background-color: #CF3477;
                         }
                         .rate.color-blue,
-                        .rate-big.color-blue:before {
+                        .rate-big.color-blue .rate-range{
                             background-color: #3b4880;
                         }
                         .rate.color-blue-light,
-                        .rate-big.color-blue-light:before {
+                        .rate-big.color-blue-light .rate-range {
                             background-color: #0087a0;
                         }
-                        .completion:before {
-                            width: 84%;
-                            height: 84%;
-                        }
-                        .licensure:before {
-                            width: 93%;
-                            height: 93%;
-                        }
-                        .placement:before {
-                            width: 67%;
-                            height: 67%;
+
+                        .rate-big:before {
+                            display: none;
                         }
                     </style>
                 </div>
@@ -421,6 +413,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.16.0/jquery.validate.js"></script>
     <script src="assets/js/smooth-scroll.min.js"></script>
+    <script src="assets/js/jquery.visible.js"></script>
     <script src="assets/js/custom/scripts.js"></script>
 </body>
 </html>

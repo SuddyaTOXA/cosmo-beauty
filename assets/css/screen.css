@@ -1274,6 +1274,8 @@ textarea:-moz-placeholder {
     top: 12px;
     left: -4px;
     background-color: #ffffff; }
+  .close-modal:hover:after, .close-modal:hover:before {
+    opacity: 0.7; }
   .close-modal:after {
     -moz-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
@@ -1522,6 +1524,24 @@ a.link-details {
     -o-border-radius: 50%;
     border-radius: 50%;
     color: #ffffff; }
+
+.rate-big .rate-range {
+  position: absolute;
+  content: '';
+  left: 0;
+  top: 0;
+  transform: scale(0);
+  -webkit-border-radius: 50%;
+  -khtml-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: 1.5s ease;
+  -o-transition: 1.5s ease;
+  transition: 1.5s ease; }
 
 .section-services {
   padding-bottom: 60px; }
