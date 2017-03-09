@@ -315,9 +315,10 @@ jQuery(document).ready(function( $ ) {
             ranges.each(function(index, el) {
 
 
-                var data = $(el).data('percentage');
+                var data = $(el).data('percentage'),
+                    cou = $(el).siblings('.count-wrap').find('.counter');
 
-                Counter($(el).siblings('.counter'), data)
+                Counter(cou, data)
 
                 $(el).css({'transform': 'scale('+ data +')'})
             });
