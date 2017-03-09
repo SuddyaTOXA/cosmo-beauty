@@ -133,7 +133,7 @@
   }
   i {
     font-size: 16px;
-    line-height: 28px;
+    line-height: 29px;
     color: #fff;
     @include transition($transition-link);
     .custom-mob-menu-box & {
@@ -224,6 +224,7 @@
 .section-cosmo-is {
   text-align: center;
   @include bg();
+  background-color: #a2245d;
   .container {
     min-height: 635px;
   }

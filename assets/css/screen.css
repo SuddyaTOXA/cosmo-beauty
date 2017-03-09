@@ -982,7 +982,7 @@ textarea:-moz-placeholder {
       margin-left: 0; }
   .social-list i {
     font-size: 16px;
-    line-height: 28px;
+    line-height: 29px;
     color: #fff;
     -webkit-transition: 0.2s;
     -khtml-transition: 0.2s;
@@ -1068,7 +1068,8 @@ textarea:-moz-placeholder {
   text-align: center;
   background-position: center;
   background-size: cover;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  background-color: #a2245d; }
   .section-cosmo-is .container {
     min-height: 635px; }
   .section-cosmo-is .content {
