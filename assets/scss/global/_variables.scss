@@ -34,6 +34,8 @@ $color-6: #dce5eb;
 $color-7: #969dac;
 $color-8: #808691;
 $color-9: #222426;
+$color-placeholder: lighten($color-8, 20%);
+$color-placeholder-inv: darken($color-0, 20%);
 
 /*backgrounds*/
 $bg-main: $color-0;

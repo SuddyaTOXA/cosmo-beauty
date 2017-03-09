@@ -416,7 +416,8 @@
 @media all and (max-width: 560px) {
   .interested {
     .check-list {
-      > li {
+      > li,
+      > .wpcf7-list-item {
         width: 100%;
       }
     }

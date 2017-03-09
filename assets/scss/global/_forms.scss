@@ -19,6 +19,36 @@
     color: $color-0;
     border-color: $color-0;
   }
+  &.wpcf7-not-valid,
+  &.error {
+    border-color: #ff0000;
+  }
+}
+.input-style.error + .error {
+  position: absolute;
+  left: 0;
+  width: 280px;
+  color: #ff0000;
+  line-height: 1.2;
+}
+span.wpcf7-not-valid-tip,
+.input-style.error + .error {
+  font-size: 0.9em;
+}
+.wpcf7-form #email-error {
+  display: none !important;
+}
+div.wpcf7-response-output {
+  margin-left: 0;
+  margin-right: 0;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  font-size: 1.1em;
+  text-align: center;
+  color: #222426;
+  .inverse & {
+    color: $color-0;
+  }
 }
 .search-style {
   max-width: 265px;
@@ -84,65 +114,72 @@ textarea.input-style {
   }
 }
 input::-webkit-input-placeholder {
-  color: $color-9;
+  color: $color-placeholder;
   @include transition($transition-other);
   .inverse & {
-    color: $color-0;
+    color: $color-placeholder-inv;
   }
 }
 input::-moz-placeholder {
-  color: $color-9;
+  color: $color-placeholder;
   @include transition($transition-other);
 }
 input:-ms-input-placeholder {
-  color: $color-9;
+  color: $color-placeholder;
   @include transition($transition-other);
   .inverse & {
-    color: $color-0;
+    color: $color-placeholder-inv;
   }
 }
 input:-moz-placeholder {
-  color: $color-9;
+  color: $color-placeholder;
   @include transition($transition-other);
 }
 textarea::-webkit-input-placeholder {
   font-family: $font-main;
-  color: $color-9;
+  color: $color-placeholder;
   @include transition($transition-other);
   .inverse & {
-    color: $color-0;
+    color: $color-placeholder-inv;
   }
 }
 textarea::-moz-placeholder {
   font-family: $font-main;
-  color: $color-9;
+  color: $color-placeholder;
   @include transition($transition-other);
   .inverse & {
-    color: $color-0;
+    color: $color-placeholder-inv;
   }
 }
 textarea:-ms-input-placeholder {
   font-family: $font-main;
-  color: $color-9;
+  color: $color-placeholder;
   @include transition($transition-other);
   .inverse & {
-    color: $color-0;
+    color: $color-placeholder-inv;
   }
 }
 textarea:-moz-placeholder {
   font-family: $font-main;
-  color: $color-9;
+  color: $color-placeholder;
   @include transition($transition-other);
   .inverse & {
-    color: $color-0;
+    color: $color-placeholder-inv;
   }
 }
-.check-style input[type=checkbox],
-.radio-style input[type=radio] {
-  display: none;
+.check-style,
+.radio-style,
+.wpcf7-checkbox.check-list,
+.wpcf7-radio.check-list {
+  input[type=radio],
+  input[type=checkbox] {
+    display: none;
+  }
 }
 .check-style span,
-.radio-style span {
+.radio-style span,
+.wpcf7-checkbox.check-list .wpcf7-list-item-label,
+.wpcf7-radio.check-list .wpcf7-list-item-label {
   position: relative;
   display: inline-block;
   padding-left: 32px;
@@ -151,7 +188,8 @@ textarea:-moz-placeholder {
     color: $color-0;
   }
 }
-.check-style span:before {
+.check-style span:before,
+.wpcf7-checkbox.check-list .wpcf7-list-item-label:before {
   content: '';
   position: absolute;
   top: 50%;
@@ -174,7 +212,8 @@ textarea:-moz-placeholder {
     background-color: transparent;
   }
 }
-.check-style input[type=checkbox]:checked + span:after {
+.check-style input[type=checkbox]:checked + span:after,
+.wpcf7-checkbox.check-list input[type=checkbox]:checked + .wpcf7-list-item-label:after {
   position: absolute;
   font-family: $font-main;
   content: "\2715";
@@ -183,16 +222,17 @@ textarea:-moz-placeholder {
   left: 0;
   top: 2px;
 }
-.radio-style span:before {
+.radio-style span:before,
+.wpcf7-radio.check-list .wpcf7-list-item-label:before {
   content: '';
   position: absolute;
   top: 50%;
   margin-top: -9px;
   left: 0;
   display: inline-block;
-  width: 16px;
-  height: 16px;
-  border: 2px solid #CCCFD1;
+  width: 18px;
+  height: 18px;
+  border: 1px solid $color-7;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
@@ -210,6 +250,20 @@ textarea:-moz-placeholder {
     background-color: transparent;
   }
 }
-.radio-style input[type=radio]:checked + span:before {
-  content: '\f111';
+.radio-style input[type=radio]:checked + span:after,
+.wpcf7-radio.check-list input[type=radio]:checked + .wpcf7-list-item-label:after {
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: 3px;
+  width: 14px;
+  height: 14px;
+  background-color: $color-8;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  .inverse & {
+    color: $color-0;
+    background-color: $color-0;
+  }
 }

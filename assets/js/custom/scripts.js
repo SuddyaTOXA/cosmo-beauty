@@ -1,9 +1,12 @@
-jQuery(document).ready(function( $ ) {
+jQuery(document).ready(function($) {
 
     // for placeholder link
-    $('.prevent, .btn-modal, a[href=#]').on('click', function(event){
-        event.preventDefault();
-    });
+    function prevent(){
+        $('.prevent, .btn-modal, a[href=#]').on('click touch', function(event){
+            event.preventDefault();
+        });
+    }
+    prevent();
 
 
     // for burger menu
@@ -111,39 +114,17 @@ jQuery(document).ready(function( $ ) {
     });
 
 
-    //validate form
-    if ($('.section').hasClass('section-connect')) {
-        $(".section-connect form").validate({
-            rules: {
-                date_d: {
-                    required: true,
-                    rangelength: [1, 2],
-                    range: [1, 31]
-                },
-                date_m: {
-                    required: true,
-                    rangelength: [1, 2],
-                    range: [1, 12]
-                },
-                date_y: {
-                    required: true,
-                    rangelength: [4, 4],
-                    range: [1990, 2050]
-                }
-            }
-        });
-    }
 
     //for modal form
         //open modal
         $('.btn-modal').on('click touch', function () {
             $('.modal-form').addClass('open');
-            $('body').addClass('overflow');
+            $(document.body).addClass('overflow');
         });
         //open modal
-        $('.close-modal').on('click', function () {
+        $('.close-modal').on('click touch', function () {
             $('.modal-form').removeClass('open');
-            $('body').removeClass('overflow');
+            $(document.body).removeClass('overflow');
             $('.mobile-menu-toggle').removeClass('active');
             $('.mobile-menu-wrap').removeClass('showing');
         });
@@ -249,8 +230,33 @@ jQuery(document).ready(function( $ ) {
             }
         });
     }
-
     blogGrid();
+
+
+    // validate form
+    $(".wpcf7-form").validate({
+        rules: {
+            date_d: {
+                rangelength: [1, 2],
+                range: [1, 31],
+                step: 1,
+                number: true
+            },
+            date_m: {
+                rangelength: [1, 2],
+                range: [1, 12],
+                step: 1,
+                number: true
+            },
+            date_y: {
+                rangelength: [4, 4],
+                range: [2017, 2030],
+                step: 1,
+                number: true
+            }
+        }
+    });
+
 
     // animate pie chart
     var lastId,
@@ -267,7 +273,6 @@ jQuery(document).ready(function( $ ) {
 
     // Bind to scroll pie charts
     //Simple counter for presonnel.page statistic
-
     $('.rate-box .counter').each(function() {
         var $this = $(this),
             countTo = $this.attr('data-count');
