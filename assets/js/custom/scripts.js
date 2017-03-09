@@ -112,23 +112,137 @@ jQuery(document).ready(function( $ ) {
 
 
     //validate form
-    $( ".section-connect form" ).validate({
-        rules: {
-            date_d: {
-                required: true,
-                rangelength: [1, 2],
-                range: [1, 31]
-            },
-            date_m: {
-                required: true,
-                rangelength: [1, 2],
-                range: [1, 12]
-            },
-            date_y: {
-                required: true,
-                rangelength: [4, 4],
-                range: [1990, 2050]
+    if ($('.section').hasClass('section-connect')) {
+        $(".section-connect form").validate({
+            rules: {
+                date_d: {
+                    required: true,
+                    rangelength: [1, 2],
+                    range: [1, 31]
+                },
+                date_m: {
+                    required: true,
+                    rangelength: [1, 2],
+                    range: [1, 12]
+                },
+                date_y: {
+                    required: true,
+                    rangelength: [4, 4],
+                    range: [1990, 2050]
+                }
             }
-        }
-    });
+        });
+    }
+
+    // for blog grid
+    function blogGrig() {
+        $(window).on('load resize', function() {
+            var width = $(window).width();
+
+            if (width >= '1024') {
+                var windowWidth = $('.container').width(),
+                    thumbWidth = windowWidth / 2 - 12,
+                    thumbHeight = (windowWidth / 100) * 53.192,
+                    thumbSmallHeight = (windowWidth / 100) * 25.532,
+                    leftPosition = thumbWidth + 24,
+                    topleftColl = 0,
+                    topRightColl = 0,
+                    postBox = $('.post-list'),
+                    postList = $('.post-list li'),
+                    count = 0,
+                    itemOne = 1,
+                    itemTwo = 2,
+                    itemThree = 3,
+                    itemFour = 4,
+                    postCount = postList.length;
+
+                //set item position
+                postList.each(function (index) {
+                    postList.width(thumbWidth);
+                    count = index + 1;
+
+                    if (count == itemOne) {
+                        itemOne = itemOne + 4;
+                        $(this).height(thumbHeight);
+                        $(this).css('top', topleftColl).css('left', 0);
+                        topleftColl = topleftColl + thumbHeight + 24;
+                    } else if (count == itemTwo) {
+                        if (itemTwo != postCount) {
+                            itemTwo = itemTwo + 4;
+                            $(this).height(thumbSmallHeight);
+                            $(this).css('top', topRightColl).css('left', leftPosition);
+                            topRightColl = topRightColl + thumbSmallHeight + 24;
+                        } else {
+                            $(this).height(thumbHeight);
+                            $(this).css('top', topRightColl).css('left', leftPosition);
+                            topRightColl = topRightColl + thumbHeight + 24;
+                        }
+                    } else if (count == itemThree) {
+                        if (itemThree != postCount) {
+                            itemThree = itemThree + 4;
+                            $(this).height(thumbHeight);
+                            $(this).css('top', topRightColl).css('left', leftPosition);
+                            topRightColl = topRightColl + thumbHeight + 24;
+                        } else {
+                            $(this).height(thumbSmallHeight);
+                            $(this).css('top', topRightColl).css('left', leftPosition);
+                            topRightColl = topRightColl + thumbSmallHeight + 24;
+                        }
+                    } else if (count == itemFour) {
+                        itemFour = itemFour + 4;
+                        $(this).height(thumbSmallHeight);
+                        $(this).css('top', topleftColl).css('left', 0);
+                        topleftColl = topleftColl + thumbSmallHeight + 24;
+                    }
+                });
+
+                //set box height
+                if (topleftColl > topRightColl) {
+                    postBox.height(topleftColl);
+                } else {
+                    postBox.height(topRightColl);
+                }
+            } else if (width > '640' && width < '1024') {
+                var windowWidth = $('.container').width(),
+                    thumbWidth = windowWidth,
+                    thumbHeight = (windowWidth / 100) * 60,
+                    topColl = 0,
+                    postBox = $('.post-list'),
+                    postList = $('.post-list li');
+
+                //set item position
+                postList.each(function () {
+                    postList.width(thumbWidth);
+                    $(this).height(thumbHeight);
+                    $(this).css('top', topColl).css('left', 0);
+                    topColl = topColl + thumbHeight + 24;
+                });
+
+                //set box height
+                postBox.height(topColl);
+            } else if ( width <= '640' ) {
+                var windowWidth = $('.container').width(),
+                    thumbWidth = windowWidth,
+                    thumbHeight = (windowWidth / 100) * 88.957,
+                    topColl = 0,
+                    postBox = $('.post-list'),
+                    postList = $('.post-list li');
+
+                //set item position
+                postList.each(function () {
+                    postList.width(thumbWidth);
+                    $(this).height(thumbHeight);
+                    $(this).css('top', topColl).css('left', 0);
+                    topColl = topColl + thumbHeight + 24;
+                });
+
+                //set box height
+                postBox.height(topColl);
+            }
+        });
+    }
+
+    blogGrig();
+
+
 });

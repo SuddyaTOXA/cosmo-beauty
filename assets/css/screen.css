@@ -358,10 +358,35 @@ a.btn-blue, .btn-blue {
   .input-style:hover, .input-style:active, .input-style:focus {
     border-color: #808691; }
 
+.search-style {
+  max-width: 265px;
+  padding-left: 40px; }
+  .search-style:active, .search-style:focus {
+    max-width: 100%; }
+
+.search-box {
+  vertical-align: middle;
+  white-space: nowrap;
+  position: relative; }
+  .search-box .icon {
+    position: absolute;
+    top: 50%;
+    margin-left: 10px;
+    margin-top: -13px;
+    z-index: 1;
+    color: #0087a0;
+    cursor: pointer; }
+  .search-box .fa-search {
+    font-size: 26px; }
+
 input.input-style,
 input.TextField {
   height: 32px;
   line-height: 32px; }
+
+input.search-style {
+  height: 42px;
+  line-height: 42px; }
 
 textarea.input-style {
   font: 16px/30px "Lato", Arial, sans-serif;
@@ -982,6 +1007,7 @@ textarea:-moz-placeholder {
   height: 100%; }
 
 .swiper-slide {
+  background-color: #3b4880;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat; }
@@ -1141,6 +1167,7 @@ textarea:-moz-placeholder {
   top: 18px; }
 
 .section-page-banner {
+  background-color: #3b4880;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat; }
@@ -1573,6 +1600,79 @@ a.link-details {
 .table-blue-light-style {
   background-color: #0087a0; }
 
+.post-info {
+  margin-top: 28px;
+  font: 20px/34px "Lato", Arial, sans-serif;
+  color: #ffffff; }
+
+.section-post {
+  padding-bottom: 80px; }
+  .section-post .content {
+    max-width: 940px;
+    margin: 0 auto;
+    font: 16px/30px "Lato", Arial, sans-serif; }
+
+.section-last-posts {
+  padding-top: 75px;
+  padding-bottom: 326px; }
+  .section-last-posts .section-title {
+    margin-bottom: 55px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #969dac; }
+
+.post-list {
+  height: 2000px;
+  position: relative;
+  margin: 24px 0 0 0; }
+  .post-list > li {
+    position: absolute;
+    width: 500px; }
+    .post-list > li > a {
+      cursor: pointer; }
+      .post-list > li > a:hover {
+        text-decoration: none; }
+
+.list-item {
+  position: relative;
+  display: table;
+  padding: 20px 40px 50px;
+  width: 100%;
+  height: 100%;
+  color: #ffffff;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-transition: 0.2s;
+  -khtml-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -ms-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s; }
+  .list-item:after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.35); }
+  .list-item:hover:after {
+    background-color: transparent; }
+  .list-item .post-info {
+    margin-top: 9px; }
+
+.list-item-box {
+  position: relative;
+  z-index: 2;
+  display: table-cell;
+  min-height: 50px;
+  vertical-align: bottom; }
+
+.post-title {
+  font: 30px/44px "Lato", Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.2em; }
+
 /*import media styles */
 /*--------------------------------------MEDIA-----------------------------------------*/
 @media all and (max-width: 1199px) {
@@ -1825,7 +1925,21 @@ a.link-details {
 
   .courses-list > li {
     padding-bottom: 50px;
-    margin-bottom: 44px; } }
+    margin-bottom: 44px; }
+
+  .section-post {
+    padding-bottom: 70px; }
+    .section-post .content {
+      font: 14px/26px "Lato", Arial, sans-serif; }
+
+  .section-last-posts {
+    padding-bottom: 76px; }
+
+  .post-title {
+    font: 24px/34px "Lato", Arial, sans-serif; }
+
+  .post-info {
+    font: 16px/24px "Lato", Arial, sans-serif; } }
 @media all and (max-width: 782px) {
   .admin-bar .header {
     top: 46px; }
@@ -1840,7 +1954,10 @@ a.link-details {
   .table-box table tfoot tr td {
     width: 140px; }
     .table-box table tfoot tr td:last-child {
-      width: 100px; } }
+      width: 100px; }
+
+  .list-item {
+    padding: 10px; } }
 @media all and (max-width: 600px) {
   .admin-bar .header.scrolling {
     top: 0; }

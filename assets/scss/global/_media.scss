@@ -317,6 +317,21 @@
     padding-bottom: 50px;
     margin-bottom: 44px;
   }
+  .section-post {
+    padding-bottom: 70px;
+    .content{
+      font: $m-font-sm-body;
+    }
+  }
+  .section-last-posts {
+    padding-bottom: 76px;
+  }
+  .post-title {
+    font: $m-font-h2;
+  }
+  .post-info {
+    font: $m-font-h4;
+  }
 }
 
 @media all and (max-width: 991px) {
@@ -372,6 +387,9 @@
     &:last-child {
       width: 100px;
     }
+  }
+  .list-item {
+    padding: 10px;
   }
 }
 

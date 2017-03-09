@@ -1,4 +1,5 @@
 .section-page-banner {
+  background-color: $color-3;
   @include bg();
   &.vertical-align .container-box {
     vertical-align: bottom;

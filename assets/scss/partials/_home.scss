@@ -163,6 +163,7 @@
     height: 100%;
   }
     .swiper-slide {
+      background-color: $color-3;
       @include bg();
       .btn-big {
         margin-top: 64px;
