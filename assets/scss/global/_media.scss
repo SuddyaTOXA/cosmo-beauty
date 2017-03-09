@@ -332,6 +332,14 @@
   .post-info {
     font: $m-font-h4;
   }
+  .close-modal {
+    margin-top: 5px;
+  }
+  .modal-header {
+    min-height: 75px;
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
 }
 
 @media all and (max-width: 991px) {

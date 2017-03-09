@@ -135,26 +135,36 @@ jQuery(document).ready(function( $ ) {
     }
 
     //for modal form
-    $('.btn-modal').on('click', function () {
-        $('.modal-form').toggleClass('open');
-        $('body').toggleClass('overflow');
-    });
+        //open modal
+        $('.btn-modal').on('click', function () {
+            $('.modal-form').addClass('open');
+            $('body').addClass('overflow');
+        });
+        //open modal
+        $('.close-modal').on('click', function () {
+            $('.modal-form').removeClass('open');
+            $('body').removeClass('overflow');
+            $('.mobile-menu-toggle').removeClass('active');
+            $('.mobile-menu-wrap').removeClass('showing');
+        });
+
 
     // for blog grid
     function blogGrid() {
         $(window).on('load resize', function() {
-            var width = $(window).width();
+            var width = $(window).width(),
+                windowWidth = $('.container').width(),
+                postBox = $('.post-list'),
+                postList = $('.post-list li'),
+                topColl = 0;
 
             if (width >= '1024') {
-                var windowWidth = $('.container').width(),
-                    thumbWidth = windowWidth / 2 - 12,
+                var thumbWidth = windowWidth / 2 - 12,
                     thumbHeight = (windowWidth / 100) * 53.192,
                     thumbSmallHeight = (windowWidth / 100) * 25.532,
                     leftPosition = thumbWidth + 24,
                     topleftColl = 0,
                     topRightColl = 0,
-                    postBox = $('.post-list'),
-                    postList = $('.post-list li'),
                     count = 0,
                     itemOne = 1,
                     itemTwo = 2,
@@ -209,12 +219,8 @@ jQuery(document).ready(function( $ ) {
                     postBox.height(topRightColl);
                 }
             } else if (width > '640' && width < '1024') {
-                var windowWidth = $('.container').width(),
-                    thumbWidth = windowWidth,
-                    thumbHeight = (windowWidth / 100) * 60,
-                    topColl = 0,
-                    postBox = $('.post-list'),
-                    postList = $('.post-list li');
+                var thumbWidth = windowWidth,
+                    thumbHeight = (windowWidth / 100) * 60;
 
                 //set item position
                 postList.each(function () {
@@ -227,12 +233,8 @@ jQuery(document).ready(function( $ ) {
                 //set box height
                 postBox.height(topColl);
             } else if ( width <= '640' ) {
-                var windowWidth = $('.container').width(),
-                    thumbWidth = windowWidth,
-                    thumbHeight = (windowWidth / 100) * 88.957,
-                    topColl = 0,
-                    postBox = $('.post-list'),
-                    postList = $('.post-list li');
+                var thumbWidth = windowWidth,
+                    thumbHeight = (windowWidth / 100) * 88.957;
 
                 //set item position
                 postList.each(function () {

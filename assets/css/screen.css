@@ -333,6 +333,7 @@ a.btn-magenta, .btn-magenta {
     background-color: #ffffff; }
 
 a.btn-blue, .btn-blue {
+  border-width: 1px;
   color: #0087a0;
   border-color: #0087a0;
   background-color: transparent; }
@@ -1190,6 +1191,8 @@ textarea:-moz-placeholder {
     width: 100%;
     max-width: 72px;
     margin-right: 20px; }
+    .date-list > li:last-child {
+      margin-right: 0; }
 
 .filed-name-wrap {
   position: relative;
@@ -1236,12 +1239,31 @@ textarea:-moz-placeholder {
     overflow-y: scroll;
     display: block; }
 
+.modal-header {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 29px;
+  padding-bottom: 29px;
+  background-color: #16365a;
+  -webkit-box-shadow: 0 1px 15px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 1px 15px rgba(0, 0, 0, 0.1);
+  -o-box-shadow: 0 1px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 15px rgba(0, 0, 0, 0.1); }
+  .modal-header .container {
+    overflow: hidden;
+    position: relative; }
+
 .close-modal {
-  position: absolute;
+  float: right;
+  position: relative;
   width: 25px;
   height: 25px;
-  right: 25px;
-  top: 25px; }
+  margin-top: 10px;
+  margin-right: 20px;
+  cursor: pointer; }
   .close-modal:after, .close-modal:before {
     position: absolute;
     content: '';
@@ -1249,8 +1271,7 @@ textarea:-moz-placeholder {
     height: 1px;
     top: 12px;
     left: -4px;
-    background-color: #ffffff;
-    cursor: pointer; }
+    background-color: #ffffff; }
   .close-modal:after {
     -moz-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
@@ -2062,7 +2083,15 @@ a.link-details {
     font: 24px/34px "Lato", Arial, sans-serif; }
 
   .post-info {
-    font: 16px/24px "Lato", Arial, sans-serif; } }
+    font: 16px/24px "Lato", Arial, sans-serif; }
+
+  .close-modal {
+    margin-top: 5px; }
+
+  .modal-header {
+    min-height: 75px;
+    padding-top: 21px;
+    padding-bottom: 21px; } }
 @media all and (max-width: 782px) {
   .admin-bar .header {
     top: 46px; }
