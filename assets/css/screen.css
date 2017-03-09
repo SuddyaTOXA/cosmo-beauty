@@ -1435,6 +1435,8 @@ a.link-details {
     padding-right: 30px; }
     .banner-link-list > li:last-child {
       padding-right: 0; }
+      .banner-link-list > li:last-child:after {
+        content: none; }
     .banner-link-list > li:after {
       position: absolute;
       content: '';

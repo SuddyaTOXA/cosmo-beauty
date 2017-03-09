@@ -9,6 +9,9 @@
       padding-right: 30px;
       &:last-child {
         padding-right: 0;
+        &:after {
+          content: none;
+        }
       }
       &:after {
         position: absolute;
