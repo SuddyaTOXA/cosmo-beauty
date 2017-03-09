@@ -287,6 +287,9 @@
       font: $font-h3;
       letter-spacing: $letter-spacing-200;
       text-transform: uppercase;
+      .inverse & {
+        color: $color-0;
+      }
     }
       .form-list {
         > li {
@@ -335,6 +338,9 @@
       color: $color-9;
       text-transform: uppercase;
       letter-spacing: $letter-spacing-200;
+      .inverse & {
+        color: $color-0;
+      }
     }
     .form-label-name {
       display: block;
@@ -342,6 +348,9 @@
       font: $font-h4;
       color: $color-8;
       font-style: italic;
+      .inverse & {
+        color: $color-0;
+      }
     }
     .name-list {
       .filed-name {
@@ -371,9 +380,33 @@
 }
   .close-modal {
     position: absolute;
-    width: 30px;
-    height: 30px;
-    right: 0;
-    top: 0;
-    background-color: #770700;
+    width: 25px;
+    height: 25px;
+    right: 25px;
+    top: 25px;
+    &:after,
+    &:before {
+      position: absolute;
+      content: '';
+      width: 34px;
+      height: 1px;
+      top: 12px;
+      left: -4px;
+      background-color: #ffffff;
+      cursor: pointer;
+    }
+    &:after {
+      -moz-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
+    &:before {
+      -moz-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg);
+      -o-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+    }
   }

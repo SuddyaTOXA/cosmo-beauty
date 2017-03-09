@@ -234,6 +234,8 @@ img {
     font: 16px/30px "Lato", Arial, sans-serif; }
     .form-block .content *:last-child {
       margin-bottom: 0; }
+    .inverse .form-block .content {
+      color: #ffffff; }
   .services-box .content {
     font: 14px/26px "Lato", Arial, sans-serif; }
   .section-why-we .section-description .content, .section-description .content {
@@ -337,6 +339,12 @@ a.btn-blue, .btn-blue {
   a.btn-blue:hover, .btn-blue:hover {
     color: #ffffff;
     background-color: #0087a0; }
+  .inverse a.btn-blue, .inverse .btn-blue {
+    color: #ffffff;
+    border-color: #ffffff; }
+    .inverse a.btn-blue:hover, .inverse .btn-blue:hover {
+      color: #16365a;
+      background-color: #ffffff; }
 
 .input-style {
   display: block;
@@ -357,10 +365,13 @@ a.btn-blue, .btn-blue {
   transition: 0.35s; }
   .input-style:hover, .input-style:active, .input-style:focus {
     border-color: #808691; }
+  .inverse .input-style {
+    color: #ffffff;
+    border-color: #ffffff; }
 
 .search-style {
   max-width: 265px;
-  padding-left: 40px; }
+  padding-left: 45px; }
   .search-style:active, .search-style:focus {
     max-width: 100%; }
 
@@ -370,14 +381,22 @@ a.btn-blue, .btn-blue {
   position: relative; }
   .search-box .icon {
     position: absolute;
+    height: 40px;
+    width: 45px;
     top: 50%;
-    margin-left: 10px;
-    margin-top: -13px;
+    margin-left: 1px;
+    margin-top: -20px;
     z-index: 1;
     color: #0087a0;
-    cursor: pointer; }
+    cursor: pointer;
+    background-color: transparent;
+    border: transparent; }
   .search-box .fa-search {
     font-size: 26px; }
+
+input[type=button], input[type=submit], button {
+  -webkit-appearance: none;
+  -moz-appearance: none; }
 
 input.input-style,
 input.TextField {
@@ -398,6 +417,9 @@ textarea.input-style {
   resize: none;
   border: 1px solid #969dac;
   color: #808691; }
+  .inverse textarea.input-style {
+    color: #ffffff;
+    border-color: #ffffff; }
 
 input::-webkit-input-placeholder {
   color: #222426;
@@ -407,6 +429,8 @@ input::-webkit-input-placeholder {
   -ms-transition: 0.35s;
   -o-transition: 0.35s;
   transition: 0.35s; }
+  .inverse input::-webkit-input-placeholder {
+    color: #ffffff; }
 
 input::-moz-placeholder {
   color: #222426;
@@ -425,6 +449,8 @@ input:-ms-input-placeholder {
   -ms-transition: 0.35s;
   -o-transition: 0.35s;
   transition: 0.35s; }
+  .inverse input:-ms-input-placeholder {
+    color: #ffffff; }
 
 input:-moz-placeholder {
   color: #222426;
@@ -444,6 +470,8 @@ textarea::-webkit-input-placeholder {
   -ms-transition: 0.35s;
   -o-transition: 0.35s;
   transition: 0.35s; }
+  .inverse textarea::-webkit-input-placeholder {
+    color: #ffffff; }
 
 textarea::-moz-placeholder {
   font-family: "Lato", Arial, sans-serif;
@@ -454,6 +482,8 @@ textarea::-moz-placeholder {
   -ms-transition: 0.35s;
   -o-transition: 0.35s;
   transition: 0.35s; }
+  .inverse textarea::-moz-placeholder {
+    color: #ffffff; }
 
 textarea:-ms-input-placeholder {
   font-family: "Lato", Arial, sans-serif;
@@ -464,6 +494,8 @@ textarea:-ms-input-placeholder {
   -ms-transition: 0.35s;
   -o-transition: 0.35s;
   transition: 0.35s; }
+  .inverse textarea:-ms-input-placeholder {
+    color: #ffffff; }
 
 textarea:-moz-placeholder {
   font-family: "Lato", Arial, sans-serif;
@@ -474,6 +506,8 @@ textarea:-moz-placeholder {
   -ms-transition: 0.35s;
   -o-transition: 0.35s;
   transition: 0.35s; }
+  .inverse textarea:-moz-placeholder {
+    color: #ffffff; }
 
 .check-style input[type=checkbox],
 .radio-style input[type=radio] {
@@ -485,6 +519,9 @@ textarea:-moz-placeholder {
   display: inline-block;
   padding-left: 32px;
   line-height: 1.3; }
+  .inverse .check-style span, .inverse
+  .radio-style span {
+    color: #ffffff; }
 
 .check-style span:before {
   content: '';
@@ -503,6 +540,10 @@ textarea:-moz-placeholder {
   -webkit-font-smoothing: antialiased;
   text-align: center;
   background: #ffffff; }
+  .inverse .check-style span:before {
+    color: #ffffff;
+    border-color: #ffffff;
+    background-color: transparent; }
 
 .check-style input[type=checkbox]:checked + span:after {
   position: absolute;
@@ -534,6 +575,10 @@ textarea:-moz-placeholder {
   text-align: center;
   background: #ffffff;
   letter-spacing: 1px; }
+  .inverse .radio-style span:before {
+    color: #ffffff;
+    border-color: #ffffff;
+    background-color: transparent; }
 
 .radio-style input[type=radio]:checked + span:before {
   content: '\f111'; }
@@ -1118,6 +1163,8 @@ textarea:-moz-placeholder {
   font: 22px/32px "Lato", Arial, sans-serif;
   letter-spacing: 0.2em;
   text-transform: uppercase; }
+  .inverse .form-box-title {
+    color: #ffffff; }
 
 .name-list {
   margin-bottom: 26px; }
@@ -1158,6 +1205,8 @@ textarea:-moz-placeholder {
   color: #222426;
   text-transform: uppercase;
   letter-spacing: 0.2em; }
+  .inverse .filed-name {
+    color: #ffffff; }
 
 .form-label-name {
   display: block;
@@ -1165,6 +1214,8 @@ textarea:-moz-placeholder {
   font: 16px/24px "Lato", Arial, sans-serif;
   color: #808691;
   font-style: italic; }
+  .inverse .form-label-name {
+    color: #ffffff; }
 
 .name-list .filed-name {
   top: 40px; }
@@ -1187,11 +1238,31 @@ textarea:-moz-placeholder {
 
 .close-modal {
   position: absolute;
-  width: 30px;
-  height: 30px;
-  right: 0;
-  top: 0;
-  background-color: #770700; }
+  width: 25px;
+  height: 25px;
+  right: 25px;
+  top: 25px; }
+  .close-modal:after, .close-modal:before {
+    position: absolute;
+    content: '';
+    width: 34px;
+    height: 1px;
+    top: 12px;
+    left: -4px;
+    background-color: #ffffff;
+    cursor: pointer; }
+  .close-modal:after {
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg); }
+  .close-modal:before {
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg); }
 
 .section-page-banner {
   background-color: #3b4880;

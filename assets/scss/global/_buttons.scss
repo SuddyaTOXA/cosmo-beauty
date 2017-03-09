@@ -45,4 +45,12 @@ a.btn-blue, .btn-blue {
     color: $color-0;
     background-color: $color-5;
   }
+  .inverse & {
+    color: $color-0;
+    border-color: $color-0;
+    &:hover {
+      color: $color-4;
+      background-color: $color-0;
+    }
+  }
 }
