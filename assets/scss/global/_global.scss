@@ -46,7 +46,7 @@ a:hover                        { text-decoration:underline; }
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-a, .btn {
+a, .btn, button, input[type=submit] {
   @include transition($transition-link);
 }
 img {

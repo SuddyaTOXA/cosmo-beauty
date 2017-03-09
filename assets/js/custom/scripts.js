@@ -136,7 +136,7 @@ jQuery(document).ready(function( $ ) {
 
     //for modal form
         //open modal
-        $('.btn-modal').on('click', function () {
+        $('.btn-modal').on('click touch', function () {
             $('.modal-form').addClass('open');
             $('body').addClass('overflow');
         });

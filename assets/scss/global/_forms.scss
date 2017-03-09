@@ -45,6 +45,9 @@
     cursor: pointer;
     background-color: transparent;
     border: transparent;
+    &:hover {
+      color: $color-2;
+    }
   }
   .fa-search {
     font-size: 26px;

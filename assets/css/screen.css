@@ -108,7 +108,7 @@ a:hover {
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-a, .btn {
+a, .btn, button, input[type=submit] {
   -webkit-transition: 0.2s;
   -khtml-transition: 0.2s;
   -moz-transition: 0.2s;
@@ -392,6 +392,8 @@ a.btn-blue, .btn-blue {
     cursor: pointer;
     background-color: transparent;
     border: transparent; }
+    .search-box .icon:hover {
+      color: #cf3477; }
   .search-box .fa-search {
     font-size: 26px; }
 
@@ -2086,7 +2088,8 @@ a.link-details {
     font: 16px/24px "Lato", Arial, sans-serif; }
 
   .close-modal {
-    margin-top: 5px; }
+    margin-top: 3px;
+    margin-right: 0; }
 
   .modal-header {
     min-height: 75px;
