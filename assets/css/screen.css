@@ -797,18 +797,14 @@ textarea:-moz-placeholder {
     bottom: 0; }
 
 /*--------------------------------------NAV-----------------------------------------*/
-.main-nav {
-  overflow: hidden; }
-
 .main-nav > ul {
-  margin-top: 8px;
   margin-right: 10px;
   margin-left: 10px;
   text-align: center; }
   .main-nav > ul > li {
     position: relative;
     display: inline-block;
-    margin: 0 12px;
+    margin: 8px 12px 0;
     text-align: center;
     cursor: pointer;
     -webkit-transition: 0.2s;
@@ -854,7 +850,7 @@ textarea:-moz-placeholder {
   .mobile-menu > li {
     position: relative;
     display: block; }
-    .mobile-menu > li > a {
+    .mobile-menu > li a {
       position: relative;
       display: inline-block;
       font: 10px/12px "Lato", Arial, sans-serif;
@@ -863,7 +859,7 @@ textarea:-moz-placeholder {
       margin: 10px 25px 8px;
       padding: 5px 0;
       color: #222426; }
-      .mobile-menu > li > a:after {
+      .mobile-menu > li a:after {
         position: absolute;
         content: '';
         width: 100%;
@@ -894,11 +890,11 @@ textarea:-moz-placeholder {
     width: 18px;
     height: 18px;
     position: absolute;
-    top: 50%;
+    top: 20px;
     margin-top: -8px;
     right: 10px;
     display: inline-block;
-    color: #770700; }
+    color: #cf3477; }
   .mobile-menu:hover:after {
     color: #0097de; }
   .mobile-menu.open:after {
@@ -908,6 +904,57 @@ textarea:-moz-placeholder {
   overflow: hidden;
   float: right;
   margin-top: 2px; }
+
+.main-nav .sub-menu {
+  overflow: hidden;
+  display: block;
+  position: absolute;
+  z-index: 10;
+  top: 25px;
+  left: -25px;
+  min-width: 100%;
+  background: #ffffff;
+  opacity: 0;
+  visibility: hidden;
+  text-align: left;
+  -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  -o-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -ms-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out; }
+
+.main-nav ul > li:hover .sub-menu {
+  opacity: 1;
+  visibility: visible;
+  margin: 0; }
+.main-nav .sub-menu li {
+  display: block;
+  min-width: 250px; }
+.main-nav .sub-menu a {
+  display: inline-block;
+  margin: 13px 20px 13px 25px;
+  font: 10px/12px "Lato", Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.2em; }
+.main-nav .sub-menu a:hover,
+.main-nav .sub-menu .current-menu-item a {
+  text-decoration: none; }
+
+.main-nav .sub-menu .sub-menu,
+.mobile-menu .sub-menu .sub-menu {
+  display: none; }
+
+.mobile-menu .sub-menu {
+  display: none;
+  padding-left: 30px; }
+  .mobile-menu .sub-menu a:hover {
+    text-decoration: none; }
+  .mobile-menu .sub-menu .sub-menu {
+    padding-left: 45px; }
 
 .footer {
   position: relative;
