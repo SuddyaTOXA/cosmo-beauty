@@ -284,6 +284,10 @@ img {
     line-height: 1;
     font-weight: 700; }
 
+.no-results {
+  font-size: 1.2em;
+  padding: 40px 0; }
+
 /* fonts */
 @font-face {
   font-family: 'Myriad Pro';
@@ -797,20 +801,15 @@ textarea:-moz-placeholder {
     bottom: 0; }
 
 /*--------------------------------------NAV-----------------------------------------*/
-.main-nav {
-  overflow: hidden; }
-
 .main-nav > ul {
-  margin-top: 8px;
   margin-right: 10px;
   margin-left: 10px;
   text-align: center; }
   .main-nav > ul > li {
     position: relative;
     display: inline-block;
-    margin: 0 12px;
+    margin: 8px 12px 0;
     text-align: center;
-    cursor: pointer;
     -webkit-transition: 0.2s;
     -moz-transition: 0.2s;
     -o-transition: 0.2s;
@@ -854,7 +853,7 @@ textarea:-moz-placeholder {
   .mobile-menu > li {
     position: relative;
     display: block; }
-    .mobile-menu > li > a {
+    .mobile-menu > li a {
       position: relative;
       display: inline-block;
       font: 10px/12px "Lato", Arial, sans-serif;
@@ -863,7 +862,7 @@ textarea:-moz-placeholder {
       margin: 10px 25px 8px;
       padding: 5px 0;
       color: #222426; }
-      .mobile-menu > li > a:after {
+      .mobile-menu > li a:after {
         position: absolute;
         content: '';
         width: 100%;
@@ -894,11 +893,11 @@ textarea:-moz-placeholder {
     width: 18px;
     height: 18px;
     position: absolute;
-    top: 50%;
+    top: 20px;
     margin-top: -8px;
     right: 10px;
     display: inline-block;
-    color: #770700; }
+    color: #cf3477; }
   .mobile-menu:hover:after {
     color: #0097de; }
   .mobile-menu.open:after {
@@ -908,6 +907,54 @@ textarea:-moz-placeholder {
   overflow: hidden;
   float: right;
   margin-top: 2px; }
+
+.main-nav .sub-menu {
+  overflow: hidden;
+  display: block;
+  position: absolute;
+  z-index: 10;
+  top: 25px;
+  left: -25px;
+  min-width: 100%;
+  padding: 10px 0;
+  background: #ffffff;
+  opacity: 0;
+  visibility: hidden;
+  text-align: left;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -ms-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out; }
+
+.main-nav ul > li:hover .sub-menu {
+  opacity: 1;
+  visibility: visible;
+  margin: 0; }
+.main-nav .sub-menu li {
+  display: block;
+  min-width: 250px; }
+.main-nav .sub-menu a {
+  display: inline-block;
+  margin: 5px 20px 5px 25px;
+  font: 10px/12px "Lato", Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.2em; }
+.main-nav .sub-menu a:hover,
+.main-nav .sub-menu .current-menu-item a {
+  text-decoration: none; }
+
+.main-nav .sub-menu .sub-menu,
+.mobile-menu .sub-menu .sub-menu {
+  display: none; }
+
+.mobile-menu .sub-menu {
+  display: block;
+  padding-left: 20px; }
+  .mobile-menu .sub-menu a:hover {
+    text-decoration: none; }
+  .mobile-menu .sub-menu .sub-menu {
+    padding-left: 45px; }
 
 .footer {
   position: relative;
@@ -1814,12 +1861,12 @@ a.link-details {
       opacity: 0.7;
       text-decoration: none; }
 
-.section-post {
+.page-template-page-blog .section-post {
   padding-bottom: 80px; }
-  .section-post .content {
-    max-width: 940px;
-    margin: 0 auto;
-    font: 16px/30px "Lato", Arial, sans-serif; }
+.section-post .content {
+  max-width: 940px;
+  margin: 0 auto;
+  font: 16px/30px "Lato", Arial, sans-serif; }
 
 .section-last-posts {
   padding-top: 75px;
@@ -1896,6 +1943,10 @@ a.link-details {
   font: 30px/44px "Lato", Arial, sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.2em; }
+
+.load-more {
+  margin-top: 30px;
+  text-align: center; }
 
 /*import media styles */
 /*--------------------------------------MEDIA-----------------------------------------*/
@@ -2151,10 +2202,10 @@ a.link-details {
     padding-bottom: 50px;
     margin-bottom: 44px; }
 
-  .section-post {
+  .section-post, .page-template-page-blog .section-post {
     padding-bottom: 70px; }
-    .section-post .content {
-      font: 14px/26px "Lato", Arial, sans-serif; }
+  .section-post .content {
+    font: 14px/26px "Lato", Arial, sans-serif; }
 
   .section-last-posts {
     padding-bottom: 76px; }
@@ -2172,7 +2223,10 @@ a.link-details {
   .modal-header {
     min-height: 75px;
     padding-top: 21px;
-    padding-bottom: 21px; } }
+    padding-bottom: 21px; }
+
+  .load-more {
+    margin-bottom: 20px; } }
 @media all and (max-width: 782px) {
   .admin-bar .header {
     top: 46px; }

@@ -11,7 +11,6 @@
     display: inline-block;
     margin:  8px 12px 0;
     text-align: center;
-    cursor: pointer;
     -webkit-transition: 0.2s;
     -moz-transition: 0.2s;
     -o-transition: 0.2s;
@@ -122,14 +121,11 @@
   top: 25px;
   left: -25px;
   min-width: 100%;
+  padding: 10px 0;
   background: $color-0;
   opacity: 0;
   visibility: hidden;
   text-align: left;
-  -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
-  -o-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
   -webkit-transition: all .2s ease-in-out;
   -moz-transition: all .2s ease-in-out;
   -ms-transition: all .2s ease-in-out;
@@ -152,7 +148,7 @@
     }
     a {
       display: inline-block;
-      margin: 13px 20px 13px 25px;
+      margin: 5px 20px 5px 25px;
       font: $m-font-primary-nav;
       text-transform: uppercase;
       letter-spacing: $letter-spacing-200;
@@ -171,7 +167,7 @@
 
 .mobile-menu .sub-menu {
   display: block;
-  padding-left: 30px;
+  padding-left: 20px;
   a {
     &:hover {
       text-decoration: none;

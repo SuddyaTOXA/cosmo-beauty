@@ -318,7 +318,10 @@
     margin-bottom: 44px;
   }
   .section-post {
-    padding-bottom: 70px;
+    &,
+    .page-template-page-blog & {
+      padding-bottom: 70px;
+    }
     .content{
       font: $m-font-sm-body;
     }
@@ -340,6 +343,9 @@
     min-height: 75px;
     padding-top: 21px;
     padding-bottom: 21px;
+  }
+  .load-more {
+    margin-bottom: 20px;
   }
 }
 

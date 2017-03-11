@@ -11,7 +11,9 @@
   }
 }
 .section-post {
-  padding-bottom: 80px;
+  .page-template-page-blog & {
+    padding-bottom: 80px;
+  }
   .content{
     max-width: 940px;
     margin: 0 auto;
@@ -105,3 +107,8 @@
             text-transform: uppercase;
             letter-spacing: $letter-spacing-200;
           }
+
+.load-more {
+  margin-top: 30px;
+  text-align: center;
+}
