@@ -264,12 +264,12 @@ img {
   position: relative;
   min-height: 100%;
   padding-top: 100px;
-  margin-bottom: -650px; }
+  margin-bottom: -686px; }
   .wrapper:after {
     content: '';
     display: block;
     width: 100%;
-    height: 650px; }
+    height: 686px; }
 
 .wrap-404 {
   text-align: center;
@@ -319,7 +319,7 @@ a.btn, .btn {
     background-color: #cf3477; }
 
 a.btn-header, .btn-header {
-  max-width: 195px;
+  max-width: 200px;
   width: 100%; }
 
 a.btn-big, .btn-big {
@@ -836,15 +836,14 @@ textarea:-moz-placeholder {
         -ms-transition: 0.2s;
         -o-transition: 0.2s;
         transition: 0.2s; }
-
 .main-nav a:hover,
-.main-nav .current-menu-item > a {
+.main-nav .current-menu-item > a,
+.main-nav .current-menu-ancestor > a {
   text-decoration: none; }
-
-.main-nav a:hover:after,
-.main-nav .current-menu-item > a:after {
-  background-color: #cf3477; }
-
+  .main-nav a:hover:after,
+  .main-nav .current-menu-item > a:after,
+  .main-nav .current-menu-ancestor > a:after {
+    background-color: #cf3477; }
 .main-nav a:hover:after {
   opacity: 0.7; }
 
@@ -1151,7 +1150,7 @@ textarea:-moz-placeholder {
 .section-banner.vertical-align .container {
   padding: 60px 15px 80px; }
 .section-banner.vertical-align .content {
-  max-width: 700px; }
+  max-width: 650px; }
 .section-banner a {
   color: #ffffff; }
   .section-banner a:hover {
@@ -1181,7 +1180,7 @@ textarea:-moz-placeholder {
   bottom: 20px; }
 
 .banner-title {
-  max-width: 700px;
+  max-width: 650px;
   font: 40px/52px "Lato", Arial, sans-serif;
   color: #ffffff;
   text-transform: uppercase;
@@ -1406,7 +1405,7 @@ textarea:-moz-placeholder {
     padding-bottom: 80px; }
   .section-page-banner .banner-title,
   .section-page-banner .content {
-    max-width: 750px;
+    max-width: 650px;
     margin-top: 14px;
     margin-bottom: 1px; }
   .section-page-banner a {
@@ -1463,7 +1462,7 @@ a.link-details {
     opacity: 0.7;
     text-decoration: none; }
   a.link-details i {
-    margin-top: -2px;
+    margin-top: -3px;
     margin-left: 3px;
     font-size: 24px;
     vertical-align: middle; }

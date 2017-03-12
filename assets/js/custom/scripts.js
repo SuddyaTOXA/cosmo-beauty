@@ -271,53 +271,33 @@ jQuery(document).ready(function($) {
 
 
     // for animate circles
-    if ($('div').hasClass('.rate-box')) {
-        // animate pie chart
-        var lastId,
-            topMenu = $("#top-menu"),
-            topMenuHeight = topMenu.outerHeight() + 15,
-            // All list items
-            menuItems = topMenu.find("a"),
-            // Anchors corresponding to menu items
-            scrollItems = menuItems.map(function () {
-                var item = $($(this).attr("href"));
-                if (item.length) {
-                    return item;
-                }
-            });
-
-
-        // Bind to scroll pie charts
-        //Simple counter for presonnel.page statistic
-        $('.rate-box .counter').each(function () {
-            var $this = $(this),
-                countTo = $this.attr('data-count');
-
-            $({countNum: $this.text()}).animate({
-                    countNum: countTo
-                },
-
-                {
-                    duration: 3500,
-                    easing: 'linear',
-                    step: function () {
-                        $this.text(Math.floor(this.countNum));
-                    },
-                    complete: function () {
-                        $this.text(this.countNum);
-                    }
-
-                });
+    // animate pie chart
+    var lastId,
+        topMenu = $("#top-menu"),
+        topMenuHeight = topMenu.outerHeight() + 15,
+        // All list items
+        menuItems = topMenu.find("a"),
+        // Anchors corresponding to menu items
+        scrollItems = menuItems.map(function () {
+            var item = $($(this).attr("href"));
+            if (item.length) {
+                return item;
+            }
         });
 
-        function Counter(counter, data) {
-            var $this = counter,
-                countTo = data * 100;
 
-            $({countNum: $this.text()}).animate({
+    // Bind to scroll pie charts
+    //Simple counter for presonnel.page statistic
+    $('.rate-box .counter').each(function () {
+        var $this = $(this),
+            countTo = $this.attr('data-count');
+
+        $({countNum: $this.text()}).animate({
                 countNum: countTo
-            }, {
-                duration: 1000,
+            },
+
+            {
+                duration: 3500,
                 easing: 'linear',
                 step: function () {
                     $this.text(Math.floor(this.countNum));
@@ -327,24 +307,42 @@ jQuery(document).ready(function($) {
                 }
 
             });
-        }
+    });
 
-        var ranges = $('.rate-box .rate-range');
-        $(window).scroll(function (event) {
+    function Counter(counter, data) {
+        var $this = counter,
+            countTo = data * 100;
 
-            if (ranges.visible()) {
-                ranges.each(function (index, el) {
-
-
-                    var data = $(el).data('percentage'),
-                        cou = $(el).siblings('.count-wrap').find('.counter');
-
-                    Counter(cou, data)
-
-                    $(el).css({'transform': 'scale(' + data + ')'})
-                });
+        $({countNum: $this.text()}).animate({
+            countNum: countTo
+        }, {
+            duration: 1000,
+            easing: 'linear',
+            step: function () {
+                $this.text(Math.floor(this.countNum));
+            },
+            complete: function () {
+                $this.text(this.countNum);
             }
+
         });
     }
+
+    var ranges = $('.rate-box .rate-range');
+    $(window).scroll(function (event) {
+
+        if (ranges.visible()) {
+            ranges.each(function (index, el) {
+
+
+                var data = $(el).data('percentage'),
+                    cou = $(el).siblings('.count-wrap').find('.counter');
+
+                Counter(cou, data)
+
+                $(el).css({'transform': 'scale(' + data + ')'})
+            });
+        }
+    });
 
 });
