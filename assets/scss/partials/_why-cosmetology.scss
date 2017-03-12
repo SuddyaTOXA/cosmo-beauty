@@ -28,9 +28,9 @@
   }
   .compensation-table {
     min-width: 100%;
-    margin: 30px -20px 0;
+    margin: 30px -25px 0;
     border-collapse: separate;
-    border-spacing: 20px;
+    border-spacing: 25px;
     color: $color-0;
     thead {
       tr {
@@ -56,5 +56,8 @@
           padding-top: 12px;
         }
       }
+    }
+    td, th {
+      vertical-align: top;
     }
   }

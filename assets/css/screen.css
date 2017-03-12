@@ -1405,7 +1405,7 @@ textarea:-moz-placeholder {
     padding-bottom: 80px; }
   .section-page-banner .banner-title,
   .section-page-banner .content {
-    max-width: 680px;
+    max-width: 720px;
     margin-top: 14px;
     margin-bottom: 1px; }
   .section-page-banner a {
@@ -1505,9 +1505,9 @@ a.link-details {
 
 .compensation-table {
   min-width: 100%;
-  margin: 30px -20px 0;
+  margin: 30px -25px 0;
   border-collapse: separate;
-  border-spacing: 20px;
+  border-spacing: 25px;
   color: #ffffff; }
   .compensation-table thead tr th {
     padding-bottom: 24px;
@@ -1521,6 +1521,8 @@ a.link-details {
     text-align: right; }
   .compensation-table tbody tr:first-child td {
     padding-top: 12px; }
+  .compensation-table td, .compensation-table th {
+    vertical-align: top; }
 
 .section-why-we.admissions {
   padding-bottom: 170px; }
