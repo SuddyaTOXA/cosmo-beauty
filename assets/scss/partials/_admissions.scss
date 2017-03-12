@@ -9,7 +9,7 @@
     margin-bottom: 32px;
   }
 }
-  .two-coll-list {
+  .two-coll-list > ul {
     -webkit-columns: 500px 2;
     -moz-columns: 500px 2;
     columns: 500px 2;

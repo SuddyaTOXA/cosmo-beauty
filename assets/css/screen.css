@@ -1405,7 +1405,7 @@ textarea:-moz-placeholder {
     padding-bottom: 80px; }
   .section-page-banner .banner-title,
   .section-page-banner .content {
-    max-width: 650px;
+    max-width: 680px;
     margin-top: 14px;
     margin-bottom: 1px; }
   .section-page-banner a {
@@ -1530,7 +1530,7 @@ a.link-details {
 .admissions .box-title {
   margin-bottom: 32px; }
 
-.two-coll-list {
+.two-coll-list > ul {
   -webkit-columns: 500px 2;
   -moz-columns: 500px 2;
   columns: 500px 2;
