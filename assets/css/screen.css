@@ -1692,7 +1692,7 @@ a.link-details {
 
 .services-right-box {
   float: right;
-  width: 50px;
+  width: 63px;
   padding-left: 10px;
   text-align: right; }
 
@@ -1721,7 +1721,7 @@ a.link-details {
       content: '';
       width: 4px;
       height: 4px;
-      right: 15px;
+      right: 14px;
       top: 50%;
       margin-top: -2px;
       -webkit-border-radius: 50%;
