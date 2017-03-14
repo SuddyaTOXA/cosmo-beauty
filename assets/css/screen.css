@@ -1689,10 +1689,13 @@ a.link-details {
 
 .services-box {
   margin-bottom: 18px; }
+  .services-box .content {
+    padding-right: 40px;
+    clear: both; }
 
 .services-right-box {
   float: right;
-  width: 63px;
+  max-width: 40%;
   padding-left: 10px;
   text-align: right; }
 
@@ -1700,6 +1703,7 @@ a.link-details {
   overflow: hidden; }
 
 .services-box-title {
+  overflow: hidden;
   font: 16px/24px "Myriad Pro", Arial, sans-serif;
   margin-bottom: 10px; }
 
