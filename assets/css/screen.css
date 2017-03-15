@@ -1680,12 +1680,15 @@ a.link-details {
   column-gap: 150px;
   text-align: left; }
   .services-list > li {
+    display: inline-block;
     width: 100%;
     vertical-align: top;
-    padding-top: 18px;
-    padding-bottom: 25px;
-    border-top: 1px solid #969dac;
-    display: inline-block; }
+    padding-bottom: 25px; }
+    .services-list > li:not(.related) {
+      padding-top: 18px;
+      border-top: 1px solid #969dac; }
+    .services-list > li.related {
+      margin-top: -25px; }
 
 .services-box {
   margin-bottom: 18px; }
